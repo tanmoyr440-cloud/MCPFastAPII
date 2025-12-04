@@ -8,6 +8,7 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_core.output_parsers import JsonOutputParser
 from dotenv import load_dotenv
 import logging
+import httpx
 
 load_dotenv()
 logger = logging.getLogger(__name__)
@@ -48,7 +49,7 @@ class LLMService:
             model=deployment_name,
             temperature=temperature,
             max_tokens=max_tokens,
-            http_client=None # Explicitly disabled as per previous request context
+            http_client=httpx.Client(verify=False)
         )
 
     async def get_response(
@@ -69,7 +70,18 @@ class LLMService:
                 HumanMessage(content=prompt)
             ]
             response = await llm.ainvoke(messages)
-            return response.content
+            content = response.content
+            
+            # Apply Guardrails
+            from app.services.guardrails_service import validate_all_guardrails
+            guardrail_result = validate_all_guardrails(content)
+            
+            if guardrail_result["overall_status"] == "blocked":
+                logger.warning(f"Content blocked by guardrails: {guardrail_result}")
+                return "I cannot provide a response to this request due to safety guidelines."
+            
+            return guardrail_result["final_content"]
+            
         except Exception as e:
             logger.error(f"Error calling LLM: {str(e)}")
             raise
@@ -97,9 +109,24 @@ class LLMService:
                 HumanMessage(content=prompt)
             ]
             
-            # Chain: LLM -> Parser
-            chain = llm | parser
-            return await chain.ainvoke(messages)
+            # Get raw response first to apply guardrails
+            response = await llm.ainvoke(messages)
+            content = response.content
+            
+            # Apply Guardrails
+            from app.services.guardrails_service import validate_all_guardrails
+            guardrail_result = validate_all_guardrails(content)
+            
+            if guardrail_result["overall_status"] == "blocked":
+                logger.warning(f"Content blocked by guardrails: {guardrail_result}")
+                raise ValueError("Response blocked by safety guardrails.")
+            
+            # Parse the (potentially redacted) content
+            # Note: Redaction might break JSON if it replaces structural elements, 
+            # but usually it replaces values (emails, keys).
+            # If parsing fails, it will raise an error, which is acceptable safety behavior.
+            return parser.parse(guardrail_result["final_content"])
+            
         except Exception as e:
             logger.error(f"Error calling LLM for JSON: {str(e)}")
             raise

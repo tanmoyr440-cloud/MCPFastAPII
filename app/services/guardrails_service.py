@@ -318,16 +318,18 @@ def validate_all_guardrails(content: str) -> dict:
         + privacy_result.issues
     )
 
-    if toxicity_result.issues or dlp_result.issues or privacy_result.issues:
+    if toxicity_result.issues:
         final_recommendation = "blocked"
-    elif sensitivity_result.issues or privacy_result.issues:
+    elif dlp_result.issues or privacy_result.issues:
+        final_recommendation = "modified"
+    elif sensitivity_result.issues:
         final_recommendation = "review_required"
     else:
         final_recommendation = "approved"
 
     return {
         "overall_status": final_recommendation,
-        "should_block": toxicity_result.issues or dlp_result.issues or privacy_result.issues,
+        "should_block": bool(toxicity_result.issues),
         "should_redact": bool(dlp_result.issues or privacy_result.issues),
         "final_content": final_content,
         "checks": {

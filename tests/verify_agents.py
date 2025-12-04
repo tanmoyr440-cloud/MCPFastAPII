@@ -6,8 +6,8 @@ from app.mcp.server import MCPServer
 from app.mcp.tools import calculator, web_search, get_current_time, CALCULATOR_TOOL, WEB_SEARCH_TOOL, TIME_TOOL
 from unittest.mock import MagicMock, patch, AsyncMock
 
-@patch("app.mcp.tools.search")
-def test_mcp_tools(mock_search):
+@patch("app.mcp.tools.httpx.Client")
+def test_mcp_tools(mock_client_class):
     print("\n--- Testing MCP Tools ---")
     
     # Calculator
@@ -19,16 +19,28 @@ def test_mcp_tools(mock_search):
     print(f"[PASS] Calculator Divide: 10 / 2 = {res_div}")
     assert res_div == 5
     
-    # Web Search (Mocked Google Search)
-    mock_result = MagicMock()
-    mock_result.title = "Mock Title"
-    mock_result.url = "http://mock.url"
-    mock_result.description = "Mock Description"
-    mock_search.return_value = [mock_result]
+    # Web Search (Mocked Serper)
+    mock_client = MagicMock()
+    mock_client.__enter__.return_value = mock_client
+    mock_client_class.return_value = mock_client
     
-    res_search = web_search("python asyncio")
-    print(f"[PASS] Web Search: {res_search}")
-    assert "Mock Title" in res_search
+    mock_response = MagicMock()
+    mock_response.json.return_value = {
+        "organic": [
+            {
+                "title": "Mock Title",
+                "link": "http://mock.url",
+                "snippet": "Mock Description"
+            }
+        ]
+    }
+    mock_client.post.return_value = mock_response
+    
+    # Mock Env Var
+    with patch.dict("os.environ", {"SERPER_API_KEY": "mock_key"}):
+        res_search = web_search("python asyncio")
+        print(f"[PASS] Web Search: {res_search}")
+        assert "Mock Title" in res_search
     
     # Time Tool
     res_time = get_current_time()

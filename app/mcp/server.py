@@ -26,10 +26,19 @@ class MCPServer:
             raise ValueError(f"Tool '{name}' not found")
         
         func = self.tools[name]
+        
+        # Filter arguments to match function signature
+        import inspect
+        sig = inspect.signature(func)
+        valid_args = {
+            k: v for k, v in arguments.items() 
+            if k in sig.parameters
+        }
+        
         # Check if function is async
         if asyncio.iscoroutinefunction(func):
-            return await func(**arguments)
-        return func(**arguments)
+            return await func(**valid_args)
+        return func(**valid_args)
 
     def get_tools(self) -> List[Dict[str, Any]]:
         """Get list of registered tools."""

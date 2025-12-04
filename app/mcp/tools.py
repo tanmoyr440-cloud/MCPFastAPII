@@ -1,7 +1,9 @@
 """Common MCP tools."""
 from app.mcp.server import Tool
 from datetime import datetime
-from googlesearch import search
+import os
+import json
+import httpx
 
 # Tool Definitions
 
@@ -25,7 +27,7 @@ CALCULATOR_TOOL = Tool(
 
 WEB_SEARCH_TOOL = Tool(
     name="web_search",
-    description="Search the web for information using Google",
+    description="Search the web for information using Serper (Google)",
     parameters={
         "type": "object",
         "properties": {
@@ -64,11 +66,35 @@ def calculator(operation: str, a: float, b: float) -> float:
         raise ValueError(f"Unknown operation: {operation}")
 
 def web_search(query: str, num_results: int = 3) -> str:
-    """Search the web using Google."""
+    """Search the web using Serper API."""
     try:
+        api_key = os.getenv("SERPER_API_KEY")
+        if not api_key:
+            return "Error: SERPER_API_KEY environment variable not set."
+
+        url = "https://google.serper.dev/search"
+        payload = json.dumps({
+            "q": query,
+            "num": num_results
+        })
+        headers = {
+            'X-API-KEY': api_key,
+            'Content-Type': 'application/json'
+        }
+
+        # Use httpx with verify=False as per global preference
+        with httpx.Client(verify=False) as client:
+            response = client.post(url, headers=headers, data=payload)
+            response.raise_for_status()
+            data = response.json()
+
         results = []
-        for result in search(query, num_results=num_results, advanced=True):
-            results.append(f"Title: {result.title}\nURL: {result.url}\nDescription: {result.description}\n")
+        if "organic" in data:
+            for result in data["organic"]:
+                title = result.get("title", "No Title")
+                link = result.get("link", "No Link")
+                snippet = result.get("snippet", "No Description")
+                results.append(f"Title: {title}\nURL: {link}\nDescription: {snippet}\n")
         
         if not results:
             return f"No results found for '{query}'."
