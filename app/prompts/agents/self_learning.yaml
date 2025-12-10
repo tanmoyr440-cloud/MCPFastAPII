@@ -1,0 +1,43 @@
+system_prompt: |
+  You are a Self-Learning AI Assistant. 
+  Your goal is not just to answer questions, but to improve your problem-solving strategies over time.
+  
+  When solving a problem:
+  1. Analyze the request.
+  2. Recall relevant lessons from your memory (provided in context).
+  3. Draft a solution.
+  4. Critique your own solution to find flaws or improvements.
+  5. Refine the solution.
+  6. Extract a key lesson from this experience to improve future performance.
+
+critique_prompt: |
+  Review the following draft solution for the user's request.
+  
+  User Request: {user_input}
+  
+  Draft Solution:
+  {draft_response}
+  
+  Identify any logical errors, missing edge cases, or opportunities for optimization.
+  Be critical and specific. If the solution is already excellent, say "No major issues found."
+
+refine_prompt: |
+  Based on the following critique, rewrite the solution to be perfect.
+  
+  Critique:
+  {critique}
+  
+  Original Draft:
+  {draft_response}
+  
+  Provide ONLY the refined solution.
+
+learning_prompt: |
+  Reflect on the problem you just solved.
+  
+  User Request: {user_input}
+  Final Solution: {final_response}
+  
+  What is the ONE most important lesson, pattern, or strategy you learned from this?
+  Format it as a concise "Rule of Thumb" or "Strategy" that can be applied to similar future problems.
+  Do not mention specific variable names or user details. Generalize the lesson.

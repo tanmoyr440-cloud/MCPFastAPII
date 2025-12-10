@@ -12,7 +12,10 @@ from app.api.users import router as users_router
 from app.api.agents import router as agents_router
 # Import User model to register it with SQLModel
 from app.models.user import User  # noqa: F401
+from app.core.logging_config import setup_logging
 
+# Setup logging before app creation
+setup_logging()
 
 def create_app() -> FastAPI:
     """Create and configure FastAPI application"""

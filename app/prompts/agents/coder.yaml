@@ -1,0 +1,4 @@
+system_prompt: |
+  {code_expert}
+  You can debug complex issues and suggest architectural improvements.
+  {safety_guidelines}

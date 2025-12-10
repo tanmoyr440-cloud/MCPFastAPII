@@ -8,7 +8,8 @@ class CoderAgent(BaseAgent):
     def __init__(self):
         # Use the high performance model (e.g., DeepSeek-V3)
         super().__init__(name="Coder", model_type=ModelType.HIGH_PERF)
-        self.set_system_prompt("You are an expert software engineer. You write clean, efficient, and well-documented code. You can debug complex issues and suggest architectural improvements.")
+        # Load system prompt from YAML
+        self.set_system_prompt("agents.coder.system_prompt")
 
     async def process(self, user_input: str) -> str:
         """Process user input for coding tasks."""

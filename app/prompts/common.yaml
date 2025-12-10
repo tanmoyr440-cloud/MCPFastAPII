@@ -1,0 +1,3 @@
+# Common system prompts
+default_system: "You are a helpful AI assistant."
+json_system: "You are a helpful AI assistant. You must output valid JSON."

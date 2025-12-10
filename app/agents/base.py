@@ -2,6 +2,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
 from app.services.llm_service import llm_service, ModelType
+from app.core.prompt_manager import prompt_manager
 
 class BaseAgent(ABC):
     """Abstract base class for AI Agents."""
@@ -16,12 +17,13 @@ class BaseAgent(ABC):
         """
         self.name = name
         self.model_type = model_type
-        self.system_prompt = f"You are {self.name}, a helpful AI assistant."
+        # Load default system prompt from PromptManager
+        self.system_prompt = prompt_manager.get_prompt("common.default_system")
         self.history: List[Dict[str, str]] = []
 
-    def set_system_prompt(self, prompt: str):
-        """Set the system prompt."""
-        self.system_prompt = prompt
+    def set_system_prompt(self, prompt_key: str, **kwargs):
+        """Set the system prompt using a key from PromptManager."""
+        self.system_prompt = prompt_manager.get_prompt(prompt_key, **kwargs)
 
     def add_message(self, role: str, content: str):
         """Add a message to the history."""

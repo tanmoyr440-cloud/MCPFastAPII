@@ -7,6 +7,9 @@ from app.services import get_ai_response
 import json
 from datetime import datetime
 from typing import List
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Store active WebSocket connections
 active_connections: List[WebSocket] = []
@@ -45,7 +48,7 @@ async def websocket_endpoint(websocket: WebSocket, session_id: str, session: Ses
             # Broadcast to all connected clients
             await broadcast_message(session_id, message)
     except Exception as e:
-        print(f"WebSocket error: {e}")
+        logger.error(f"WebSocket error: {e}")
     finally:
         if websocket in active_connections:
             active_connections.remove(websocket)
@@ -69,4 +72,4 @@ async def broadcast_message(session_id: str, message: Message):
                 }
             )
         except Exception as e:
-            print(f"Error broadcasting message: {e}")
+            logger.error(f"Error broadcasting message: {e}")

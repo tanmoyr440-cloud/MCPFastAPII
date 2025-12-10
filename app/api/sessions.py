@@ -9,6 +9,9 @@ import asyncio
 
 # Import broadcast function
 from app.api.websocket import broadcast_message
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/sessions", tags=["sessions"])
 
@@ -110,7 +113,7 @@ async def add_message(
     content_to_store = message_create.content
     if guardrail_result["should_redact"]:
         # Log the guardrail violation (can be stored in audit log)
-        print(f"Guardrail redaction applied: {guardrail_result['checks']}")
+        logger.info(f"Guardrail redaction applied: {guardrail_result['checks']}")
 
     # Create and store message
     from datetime import datetime
@@ -191,7 +194,7 @@ async def generate_ai_response(session_id: str):
             # Broadcast AI response
             await broadcast_message(session_id, assistant_message)
     except Exception as e:
-        print(f"Error generating AI response: {e}")
+        logger.error(f"Error generating AI response: {e}")
 
 
 def generate_ai_response_sync(session_id: str):
@@ -330,7 +333,7 @@ def generate_rag_response_sync(session_id: str, file_url: str, prompt: str):
                 # Broadcast RAG response
                 await broadcast_message(session_id, assistant_message)
         except Exception as e:
-            print(f"Error generating RAG response: {e}")
+            logger.error(f"Error generating RAG response: {e}")
 
     asyncio.run(run_rag())
 

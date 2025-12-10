@@ -1,0 +1,2 @@
+2025-12-10 18:31:38,042 - app.core.logging_config - INFO - Logging configured. Writing to tests\logs\test_log.txt
+2025-12-10 18:31:38,043 - test_logger - INFO - This is a test log message.
