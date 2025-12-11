@@ -1,7 +1,13 @@
 """AI service for OpenAI integration."""
 from app.services.llm_service import llm_service, ModelType
 
-async def get_ai_response(conversation_history: list[dict]) -> str:
+from typing import Union, Dict, Any
+
+async def get_ai_response(
+    conversation_history: list[dict],
+    evaluate: bool = False,
+    retry_on_fail: bool = False
+) -> Union[str, Dict[str, Any]]:
     """
     Get response from OpenAI using conversation history.
     
@@ -35,9 +41,16 @@ async def get_ai_response(conversation_history: list[dict]) -> str:
         response = await llm_service.get_response(
             prompt=full_prompt,
             model_type=ModelType.BASIC, # Default to basic model
-            system_prompt="You are a helpful AI assistant."
+            system_prompt="You are a helpful AI assistant.",
+            evaluate=evaluate,
+            retry_on_fail=retry_on_fail
         )
 
+        if isinstance(response, dict):
+            # Return the structured response directly
+            # The caller (sessions.py) will handle extraction
+            return response
+            
         return response
     except Exception as e:
         return f"Error: {str(e)}"

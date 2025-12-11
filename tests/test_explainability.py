@@ -17,7 +17,8 @@ async def test_explainability():
             mock_token.count_tokens.return_value = 10
             
             # Mock observability to avoid errors
-            with patch("app.services.llm_service.observability_service"):
+            with patch("app.services.middleware.observability.obs_manager") as mock_obs:
+                mock_obs.is_enabled.return_value = False
                 
                 result = await llm_service.get_response(
                     prompt="What is the meaning of life?",

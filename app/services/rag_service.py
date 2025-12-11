@@ -3,6 +3,7 @@ import os
 import mimetypes
 from pathlib import Path
 from pypdf import PdfReader
+from typing import Union, Dict, Any
 from app.services.llm_service import llm_service, ModelType
 
 async def extract_text_from_file(file_path: str) -> str:
@@ -26,7 +27,7 @@ async def extract_text_from_file(file_path: str) -> str:
     except Exception as e:
         return f"[Error extracting text: {str(e)}]"
 
-async def get_rag_response(prompt: str, file_path: str) -> str:
+async def get_rag_response(prompt: str, file_path: str) -> Union[str, Dict[str, Any]]:
     """
     Get AI response using RAG with file content and user prompt.
     """
@@ -59,11 +60,15 @@ Please analyze the document content above and provide a comprehensive response."
         return f"Error: {str(e)}"
 
 
+
+
 async def get_rag_response_with_conversation(
     prompt: str, 
     file_path: str, 
-    conversation_history: list[dict] | None = None
-) -> str:
+    conversation_history: list[dict] | None = None,
+    evaluate: bool = False,
+    retry_on_fail: bool = False
+) -> Union[str, Dict[str, Any]]:
     """
     Get AI response using RAG with file content, user prompt, and conversation context.
     """
@@ -96,7 +101,9 @@ Please analyze the document and provide a response considering the conversation 
         return await llm_service.get_response(
             prompt=rag_prompt,
             model_type=ModelType.BASIC,
-            system_prompt="You are a helpful AI assistant."
+            system_prompt="You are a helpful AI assistant.",
+            evaluate=evaluate,
+            retry_on_fail=retry_on_fail
         )
             
     except Exception as e:

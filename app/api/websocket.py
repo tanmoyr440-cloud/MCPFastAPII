@@ -3,7 +3,7 @@ from fastapi import WebSocket, Depends
 from sqlmodel import Session, select
 from app.core import get_session
 from app.models import ChatSession, Message
-from app.services import get_ai_response
+
 import json
 from datetime import datetime
 from typing import List
@@ -68,6 +68,9 @@ async def broadcast_message(session_id: str, message: Message):
                         "timestamp": message.timestamp,
                         "file_url": message.file_url,
                         "file_name": message.file_name,
+                        "token_count": message.token_count,
+                        "cost": message.cost,
+                        "carbon_footprint": message.carbon_footprint,
                     },
                 }
             )

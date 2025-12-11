@@ -1,3 +1,11 @@
+import sys
+import io
+
+# Force UTF-8 encoding for stdout/stderr to handle emojis on Windows
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
 """Application factory and configuration."""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -13,6 +21,7 @@ from app.api.agents import router as agents_router
 # Import User model to register it with SQLModel
 from app.models.user import User  # noqa: F401
 from app.core.logging_config import setup_logging
+from app.core.observability_config import initialize_observability, shutdown_observability
 
 # Setup logging before app creation
 setup_logging()
@@ -35,6 +44,12 @@ def create_app() -> FastAPI:
     def on_startup():
         """Create database and tables on startup"""
         create_db_and_tables()
+        initialize_observability()
+
+    @app.on_event("shutdown")
+    def on_shutdown():
+        """Cleanup on shutdown"""
+        shutdown_observability()
 
     # Health check endpoint
     @app.get("/")

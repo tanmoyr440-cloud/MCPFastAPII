@@ -19,10 +19,19 @@ dependencies = [
     "python-multipart==0.0.20",
     "tiktoken",
     "pyyaml",
-    "langchain",
+    "langchain>=0.1.0",
     "langchain-openai",
     "pypdf",
     "langsmith",
+    "langchain-community",
+    # Observability dependencies
+    "opentelemetry-api>=1.20.0",
+    "opentelemetry-sdk>=1.20.0",
+    "opentelemetry-instrumentation>=0.41b0",
+    "traceloop-sdk>=0.15.0",
+    "arize-phoenix>=12.0.0",
+    "ragas>=0.1.0",
+    "datasets>=2.14.0",
 ]
 
 [tool.pytest.ini_options]

@@ -12,6 +12,15 @@ class MessageRead(SQLModel):
     timestamp: str
     file_url: Optional[str] = None
     file_name: Optional[str] = None
+    
+    # Sustainability Metrics
+    token_count: Optional[int] = None
+    cost: Optional[float] = None
+    carbon_footprint: Optional[float] = None
+    
+    # Evaluation Metrics
+    evaluation_scores: Optional[dict] = None
+    is_flagged: bool = False
 
 
 class MessageCreate(SQLModel):

@@ -36,6 +36,9 @@ async def get_sessions(session: Session = Depends(get_session)):
                         timestamp=m.timestamp,
                         file_url=m.file_url,
                         file_name=m.file_name,
+                        token_count=m.token_count,
+                        cost=m.cost,
+                        carbon_footprint=m.carbon_footprint,
                     )
                     for m in messages
                 ],
@@ -80,6 +83,9 @@ async def get_session_detail(session_id: str, session: Session = Depends(get_ses
                 timestamp=m.timestamp,
                 file_url=m.file_url,
                 file_name=m.file_name,
+                token_count=m.token_count,
+                cost=m.cost,
+                carbon_footprint=m.carbon_footprint,
             )
             for m in messages
         ],
@@ -153,6 +159,9 @@ async def add_message(
         timestamp=message.timestamp,
         file_url=message.file_url,
         file_name=message.file_name,
+        token_count=message.token_count,
+        cost=message.cost,
+        carbon_footprint=message.carbon_footprint,
     )
 
 
@@ -178,14 +187,30 @@ async def generate_ai_response(session_id: str):
                 })
 
             # Get AI response
-            ai_response = await get_ai_response(conversation_history)
+            ai_response = await get_ai_response(conversation_history, evaluate=True, retry_on_fail=True)
+            
+            content = ai_response
+            metrics = {}
+            eval_scores = {}
+            is_flagged = False
+            
+            if isinstance(ai_response, dict):
+                content = ai_response.get("content", "")
+                metrics = ai_response.get("usage_metrics", {})
+                eval_scores = ai_response.get("evaluation_scores", {})
+                is_flagged = ai_response.get("is_flagged", False)
 
             # Create and store assistant message
             assistant_message = Message(
                 session_id=session_id,
-                content=ai_response,
+                content=content,
                 sender="assistant",
                 timestamp=datetime.now().isoformat(),
+                token_count=metrics.get("total_tokens"),
+                cost=metrics.get("cost_usd"),
+                carbon_footprint=metrics.get("carbon_footprint_kg"),
+                evaluation_scores=eval_scores,
+                is_flagged=is_flagged,
             )
             db_session.add(assistant_message)
             db_session.commit()
@@ -270,6 +295,9 @@ async def add_message_with_rag(
         timestamp=user_message.timestamp,
         file_url=user_message.file_url,
         file_name=user_message.file_name,
+        token_count=user_message.token_count,
+        cost=user_message.cost,
+        carbon_footprint=user_message.carbon_footprint,
     )
 
 
@@ -316,15 +344,33 @@ def generate_rag_response_sync(session_id: str, file_url: str, prompt: str):
                 rag_response = await get_rag_response_with_conversation(
                     prompt, 
                     file_path,
-                    conversation_history
+                    conversation_history,
+                    evaluate=True,
+                    retry_on_fail=True
                 )
+                
+                content = rag_response
+                metrics = {}
+                eval_scores = {}
+                is_flagged = False
+                
+                if isinstance(rag_response, dict):
+                    content = rag_response.get("content", "")
+                    metrics = rag_response.get("usage_metrics", {})
+                    eval_scores = rag_response.get("evaluation_scores", {})
+                    is_flagged = rag_response.get("is_flagged", False)
 
                 # Create and store assistant message with RAG response
                 assistant_message = Message(
                     session_id=session_id,
-                    content=rag_response,
+                    content=content,
                     sender="assistant",
                     timestamp=datetime.now().isoformat(),
+                    token_count=metrics.get("total_tokens"),
+                    cost=metrics.get("cost_usd"),
+                    carbon_footprint=metrics.get("carbon_footprint_kg"),
+                    evaluation_scores=eval_scores,
+                    is_flagged=is_flagged,
                 )
                 db_session.add(assistant_message)
                 db_session.commit()
