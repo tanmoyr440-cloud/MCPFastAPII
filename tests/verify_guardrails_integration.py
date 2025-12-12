@@ -1,8 +1,8 @@
 import asyncio
 from unittest.mock import MagicMock, patch, AsyncMock
-from app.services.llm_service import LLMService, ModelType
-
-@patch("app.services.llm_service.ChatOpenAI")
+from app.services.llm.llm_service import LLMService, ModelType
+from app.services.guardrails_service import guardrails_service
+@patch("app.services.llm.llm_service.ChatOpenAI")
 def test_guardrails_integration(mock_openai_class):
     print("\n--- Testing Guardrails Integration in LLMService ---")
     

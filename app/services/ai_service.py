@@ -1,5 +1,5 @@
 """AI service for OpenAI integration."""
-from app.services.llm_service import llm_service, ModelType
+from app.services.llm.llm_service import llm_service, ModelType
 
 from typing import Union, Dict, Any
 

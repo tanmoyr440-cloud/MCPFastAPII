@@ -84,13 +84,13 @@ def initialize_observability():
                 disable_batch=False,
                 # exporter_endpoint=phoenix_endpoint,
             )
-            logger.info("✅ Traceloop SDK initialized")
+            logger.info("[SUCCESS] Traceloop SDK initialized")
         except Exception as e:
             logger.error(f"Failed to initialize Traceloop: {str(e)}")
             logger.warning("Continuing without automatic LLM instrumentation...")
         
-        logger.info("✅ Observability initialized successfully")
-        logger.info(f"📊 Phoenix UI available at: http://{os.getenv("PHOENIX_HOST")}:{os.getenv("PHOENIX_PORT")}")
+        logger.info("[SUCCESS] Observability initialized successfully")
+        logger.info(f"[INFO] Phoenix UI available at: http://{os.getenv("PHOENIX_HOST")}:{os.getenv("PHOENIX_PORT")}")
         
     except Exception as e:
         logger.error(f"Failed to initialize observability: {str(e)}", exc_info=True)
@@ -117,7 +117,7 @@ def shutdown_observability():
         except Exception as e:
             logger.error(f"Error flushing traces: {str(e)}")
         
-        logger.info("✅ Observability shutdown complete")
+        logger.info("[SUCCESS] Observability shutdown complete")
         
     except Exception as e:
         logger.error(f"Error during observability shutdown: {str(e)}")

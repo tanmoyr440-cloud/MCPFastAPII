@@ -1,6 +1,6 @@
 """Coding agent specialized in software development."""
 from app.agents.base import BaseAgent
-from app.services.llm_service import ModelType
+from app.services.llm.llm_service import ModelType
 from app.services.observability import trace_llm_operation
 
 class CoderAgent(BaseAgent):

@@ -62,7 +62,7 @@ def test_mcp_server():
     print(f"[PASS] Server Call 'get_current_time': {res_time}")
     assert len(res_time) > 0
 
-@patch("app.services.llm_service.ChatOpenAI")
+@patch("app.services.llm.llm_service.ChatOpenAI")
 def test_agents(mock_openai_class):
     print("\n--- Testing AI Agents (Mocked LangChain) ---")
     

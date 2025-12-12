@@ -1,9 +1,10 @@
 import asyncio
-from app.services.llm_service import LLMService, ModelType
-from unittest.mock import MagicMock, patch, AsyncMock
-import json
+from app.services.llm.llm_service import LLMService, ModelType
+from langchain_core.messages import AIMessage
+import os
 
-@patch("app.services.llm_service.ChatOpenAI")
+# Mock dependencies
+@patch("app.services.llm.llm_service.ChatOpenAI")
 def test_llm_service(mock_openai_class):
     print("\n--- Testing LLM Service (Mocked LangChain) ---")
     

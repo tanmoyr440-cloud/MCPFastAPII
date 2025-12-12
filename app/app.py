@@ -1,11 +1,3 @@
-import sys
-import io
-
-# Force UTF-8 encoding for stdout/stderr to handle emojis on Windows
-if sys.platform == "win32":
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
-
 """Application factory and configuration."""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware

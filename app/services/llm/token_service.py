@@ -37,16 +37,45 @@ class TokenService:
         Estimate the cost of the interaction.
         Note: Prices are hardcoded here for simplicity, but should ideally be in a config.
         """
-        # Simplified pricing map (per 1k tokens)
+        # Pricing map (per 1k tokens)
+        # Includes standard OpenAI models and specific Azure/MaaS deployments from .env
         pricing = {
+            # Standard OpenAI
             "gpt-3.5-turbo": {"input": 0.0005, "output": 0.0015},
             "gpt-4": {"input": 0.03, "output": 0.06},
+            "gpt-4o": {"input": 0.005, "output": 0.015},
             "gpt-4-turbo": {"input": 0.01, "output": 0.03},
-            # Add others as needed
+            
+            # Azure / Custom Deployments
+            "azure/genailab-maas-gpt-35-turbo": {"input": 0.0005, "output": 0.0015},
+            "azure/genailab-maas-gpt-4o": {"input": 0.005, "output": 0.015},
+            
+            # Llama 3 (Approximate Azure MaaS pricing)
+            "azure_ai/genailab-maas-Llama-3.3-70B-Instruct": {"input": 0.0007, "output": 0.0009},
+            
+            # DeepSeek (Approximate pricing based on V2/V3 public rates)
+            "azure_ai/genailab-maas-DeepSeek-R1": {"input": 0.00014, "output": 0.00028},
+            "azure_ai/genailab-maas-DeepSeek-V3-0324": {"input": 0.00014, "output": 0.00028},
+            
+            # Experimental / Other
+            "azure_ai/genailab-maas-Llama-4-Maverick-17B-128E-Instruct-FP8": {"input": 0.0005, "output": 0.001},
         }
         
-        # Default to gpt-3.5-turbo pricing if unknown
-        model_pricing = pricing.get(model, pricing["gpt-3.5-turbo"])
+        # Exact match
+        if model in pricing:
+            model_pricing = pricing[model]
+        else:
+            # Fallback heuristics
+            if "gpt-4" in model:
+                model_pricing = pricing["gpt-4o"] # Default to 4o for unknown GPT-4 variants
+            elif "gpt-3.5" in model:
+                model_pricing = pricing["gpt-3.5-turbo"]
+            elif "Llama" in model:
+                model_pricing = pricing["azure_ai/genailab-maas-Llama-3.3-70B-Instruct"]
+            elif "DeepSeek" in model:
+                model_pricing = pricing["azure_ai/genailab-maas-DeepSeek-V3-0324"]
+            else:
+                model_pricing = pricing["gpt-3.5-turbo"] # Ultimate fallback
         
         input_cost = (prompt_tokens / 1000) * model_pricing["input"]
         output_cost = (completion_tokens / 1000) * model_pricing["output"]

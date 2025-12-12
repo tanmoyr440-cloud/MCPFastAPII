@@ -1,7 +1,7 @@
 from typing import Dict, Any
 import logging
 from app.services.middleware.base import BaseMiddleware
-from app.services.uncertainty_service import uncertainty_service
+from app.services.llm.uncertainty_service import uncertainty_service
 
 logger = logging.getLogger(__name__)
 

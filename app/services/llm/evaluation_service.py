@@ -78,8 +78,26 @@ class EvaluationService:
             )
             
             # CRITICAL: Use bracket access instead of .get() as Ragas result is not a standard dict
-            faithfulness_score = results["faithfulness"] if "faithfulness" in results else 1.0
-            relevancy_score = results["answer_relevancy"] if "answer_relevancy" in results else 1.0
+            # Wrap in try-except to handle cases where Ragas fails to produce metrics (e.g. Auth Error)
+            try:
+                val = results["faithfulness"]
+                if isinstance(val, list):
+                    faithfulness_score = val[0]
+                else:
+                    faithfulness_score = val
+            except (KeyError, IndexError, TypeError):
+                logger.warning("Could not extract faithfulness score. Defaulting to 1.0")
+                faithfulness_score = 1.0
+
+            try:
+                val = results["answer_relevancy"]
+                if isinstance(val, list):
+                    relevancy_score = val[0]
+                else:
+                    relevancy_score = val
+            except (KeyError, IndexError, TypeError):
+                logger.warning("Could not extract answer_relevancy score. Defaulting to 1.0")
+                relevancy_score = 1.0
 
              # Handle NaNs (common in Ragas failures)
             import math

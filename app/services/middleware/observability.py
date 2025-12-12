@@ -65,7 +65,7 @@ class ObservabilityMiddleware(BaseMiddleware):
             # obs_manager.extract_token_usage expects an object with response_metadata attribute
             
             # Simpler: just use token_service as before, but record to span
-            from app.services.token_service import token_service
+            from app.services.llm.token_service import token_service
             
             deployment_name = context.get("deployment_name")
             prompt = context.get("prompt", "")

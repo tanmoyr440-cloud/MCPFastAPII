@@ -1,6 +1,6 @@
 import pytest
 import math
-from app.services.uncertainty_service import uncertainty_service
+from app.services.llm.uncertainty_service import uncertainty_service
 
 def test_calculate_metrics():
     # Mock logprobs (list of dicts)

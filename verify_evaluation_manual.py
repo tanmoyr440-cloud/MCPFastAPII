@@ -1,7 +1,7 @@
 import asyncio
 import logging
 from unittest.mock import MagicMock, AsyncMock, patch
-from app.services.llm_service import LLMService
+from app.services.llm.llm_service import LLMService
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -24,9 +24,9 @@ async def verify_evaluation_flow():
     mock_scores = {"faithfulness": 0.95, "answer_relevancy": 0.98}
     
     with patch.object(llm_service, "_get_llm") as mock_get_llm, \
-         patch("app.services.llm_service.evaluation_service") as mock_eval_service, \
-         patch("app.services.llm_service.token_service"), \
-         patch("app.services.llm_service.grounding_service"):
+         patch("app.services.llm.llm_service.evaluation_service") as mock_eval_service, \
+         patch("app.services.llm.llm_service.token_service"), \
+         patch("app.services.llm.llm_service.grounding_service"):
         
         # Setup Mocks
         mock_llm = MagicMock()

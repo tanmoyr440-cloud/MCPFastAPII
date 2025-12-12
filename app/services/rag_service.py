@@ -4,7 +4,7 @@ import mimetypes
 from pathlib import Path
 from pypdf import PdfReader
 from typing import Union, Dict, Any
-from app.services.llm_service import llm_service, ModelType
+from app.services.llm.llm_service import llm_service, ModelType
 
 async def extract_text_from_file(file_path: str) -> str:
     """Extract text content from a file based on its mime type."""

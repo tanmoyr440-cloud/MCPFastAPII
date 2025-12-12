@@ -10,11 +10,12 @@ from dotenv import load_dotenv
 import logging
 import httpx
 
-from app.services.token_service import token_service
-from app.services.grounding_service import grounding_service
+from app.services.llm.token_service import token_service
+from app.services.llm.grounding_service import grounding_service
+from app.services.llm.token_optimizer import token_optimizer
 # cyclic import check: ensure evaluation_service is imported safely or moved if needed
 # For now assuming structure allows it, otherwise use local import
-from app.services.evaluation_service import evaluation_service
+from app.services.llm.evaluation_service import evaluation_service
 
 load_dotenv(override=True)
 logger = logging.getLogger(__name__)
@@ -137,6 +138,26 @@ class LLMService:
                     SystemMessage(content=current_system_prompt),
                     HumanMessage(content=current_prompt)
                 ]
+                
+                # --- Token Optimization ---
+                # Check if we need to optimize context (e.g. for very long prompts or history)
+                # Note: 'messages' here is just system+user. In a real chat app, you'd pass the full history.
+                # For this implementation, we'll assume 'messages' might grow if we were passing history.
+                # But since we construct it fresh here, let's pretend we might have history.
+                # TODO: If get_response accepted a list of messages (history), we'd optimize that.
+                # Currently it takes a single prompt string. 
+                # However, if the prompt itself is huge, we might want to truncate? 
+                # Or if we change get_response to support history later.
+                
+                # For now, let's just run the optimizer to show integration, 
+                # even if it's just 2 messages.
+                # We'll use a high limit so we don't accidentally truncate a normal prompt.
+                messages = await token_optimizer.summarize_context(
+                    messages, 
+                    self, 
+                    deployment_name, 
+                    max_context_tokens=10000 # High limit for now
+                )
                 
                 # This uses the async_client we configured above
                 response = await llm.ainvoke(messages)

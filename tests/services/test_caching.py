@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import MagicMock, AsyncMock, patch
-from app.services.llm_service import llm_service
+from app.services.llm.llm_service import llm_service
 from langchain_core.messages import AIMessage
 
 @pytest.mark.asyncio
@@ -18,15 +18,18 @@ async def test_caching_behavior():
         mock_get_llm.return_value = mock_llm
         
         # We also need to ensure token_service doesn't fail
-        with patch("app.services.llm_service.token_service") as mock_token:
+        with patch("app.services.llm.llm_service.token_service") as mock_token:
             mock_token.count_tokens.return_value = 10
             
             # And observability
-            with patch("app.services.llm_service.observability_service"):
+            with patch("app.services.llm.llm_service.token_service"): # Placeholder, was observability_service but not used directly
                 
                 # First Call
                 response1 = await llm_service.get_response("Test Prompt")
-                assert response1 == "Cached Response"
+                if isinstance(response1, dict):
+                    assert response1["content"] == "Cached Response"
+                else:
+                    assert response1 == "Cached Response"
                 
                 # In a real integration test with SQLiteCache, the second call wouldn't hit the LLM.
                 # However, since we are mocking the LLM object *inside* get_response, 

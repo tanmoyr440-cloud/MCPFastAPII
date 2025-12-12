@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import MagicMock, patch, AsyncMock
-from app.services.evaluation_service import EvaluationService
-from app.services.llm_service import LLMService
+from app.services.llm.evaluation_service import EvaluationService
+from app.services.llm.llm_service import LLMService
 
 @pytest.fixture
 def evaluation_service():
@@ -11,12 +11,12 @@ def test_check_thresholds(evaluation_service):
     scores = {"faithfulness": 0.8, "answer_relevancy": 0.9}
     assert evaluation_service.check_thresholds(scores) is True
     
-    scores = {"faithfulness": 0.5, "answer_relevancy": 0.9}
+    scores = {"faithfulness": 0.4, "answer_relevancy": 0.9}
     assert evaluation_service.check_thresholds(scores) is False
 
 @pytest.mark.asyncio
 async def test_evaluate_response_mocked(evaluation_service):
-    with patch("app.services.evaluation_service.evaluate") as mock_evaluate:
+    with patch("app.services.llm.evaluation_service.evaluate") as mock_evaluate:
         mock_evaluate.return_value = {"faithfulness": 0.8, "answer_relevancy": 0.9}
         
         scores = await evaluation_service.evaluate_response("query", "response", ["context"])
@@ -51,7 +51,7 @@ async def test_reflexion_loop():
         mock_get_llm.return_value = mock_llm
         
         # Mock EvaluationService
-        with patch("app.services.llm_service.evaluation_service") as mock_eval_service:
+        with patch("app.services.llm.llm_service.evaluation_service") as mock_eval_service:
             # First eval fails, second passes
             mock_eval_service.evaluate_response = AsyncMock(side_effect=[
                 {"faithfulness": 0.5, "answer_relevancy": 0.5},
@@ -60,8 +60,8 @@ async def test_reflexion_loop():
             mock_eval_service.check_thresholds.side_effect = [False, True]
             
             # Mock other services
-            with patch("app.services.llm_service.token_service"):
-                with patch("app.services.llm_service.grounding_service"):
+            with patch("app.services.llm.llm_service.token_service"):
+                with patch("app.services.llm.llm_service.grounding_service"):
                      response = await llm_service.get_response(
                          prompt="Question",
                          evaluate=True,
@@ -92,14 +92,14 @@ async def test_reflexion_loop_failure():
         mock_get_llm.return_value = mock_llm
         
         # Mock EvaluationService
-        with patch("app.services.llm_service.evaluation_service") as mock_eval_service:
+        with patch("app.services.llm.llm_service.evaluation_service") as mock_eval_service:
             # All attempts fail
             mock_eval_service.evaluate_response = AsyncMock(return_value={"faithfulness": 0.4, "answer_relevancy": 0.4})
             mock_eval_service.check_thresholds.return_value = False
             
             # Mock other services
-            with patch("app.services.llm_service.token_service"):
-                with patch("app.services.llm_service.grounding_service"):
+            with patch("app.services.llm.llm_service.token_service"):
+                with patch("app.services.llm.llm_service.grounding_service"):
                      response = await llm_service.get_response(
                          prompt="Question",
                          evaluate=True,

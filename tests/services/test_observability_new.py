@@ -27,7 +27,7 @@ async def test_observability_middleware():
             mock_tracer.start_span.return_value = mock_span
             
             # Mock token_service
-            with patch("app.services.token_service.token_service") as mock_token_service:
+            with patch("app.services.llm.token_service.token_service") as mock_token_service:
                 mock_token_service.count_tokens.return_value = 10
                 
                 # Test process_request

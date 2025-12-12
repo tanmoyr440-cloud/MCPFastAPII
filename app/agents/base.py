@@ -1,7 +1,7 @@
 """Base Agent class."""
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
-from app.services.llm_service import llm_service, ModelType
+from app.services.llm.llm_service import llm_service, ModelType
 from app.core.prompt_manager import prompt_manager
 
 class BaseAgent(ABC):

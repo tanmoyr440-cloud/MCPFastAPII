@@ -1,5 +1,5 @@
 from app.agents.base import BaseAgent
-from app.services.llm_service import ModelType
+from app.services.llm.llm_service import ModelType
 
 class GeneralAgent(BaseAgent):
     """A general purpose AI assistant."""

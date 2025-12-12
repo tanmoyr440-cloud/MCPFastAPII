@@ -1,6 +1,6 @@
 """Research agent with reasoning capabilities."""
 from app.agents.base import BaseAgent
-from app.services.llm_service import ModelType
+from app.services.llm.llm_service import ModelType
 import asyncio
 
 class ResearchAgent(BaseAgent):

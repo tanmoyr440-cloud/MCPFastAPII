@@ -1,6 +1,6 @@
 from typing import List, Dict, Any
 from app.agents.base import BaseAgent
-from app.services.llm_service import llm_service, ModelType
+from app.services.llm.llm_service import llm_service, ModelType
 from app.services.memory_service import memory_service
 from app.core.prompt_manager import prompt_manager
 

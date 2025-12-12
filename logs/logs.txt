@@ -4725,3 +4725,1492 @@ TypeError: Cannot convert value to AST: {}.
 2025-12-12 06:52:51,459 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
 2025-12-12 07:52:28,941 - app.core.observability_config - INFO - Shutting down observability...
 2025-12-12 07:52:28,942 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 17:55:27,257 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 17:55:27,258 - app.services.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 17:55:28,033 - ragas.executor - ERROR - Exception raised in Job[1]: AuthenticationError(Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401})
+2025-12-12 17:55:28,044 - ragas.executor - ERROR - Exception raised in Job[0]: AuthenticationError(Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401})
+2025-12-12 17:55:28,394 - app.services.evaluation_service - ERROR - Error during evaluation: KeyError(0)
+2025-12-12 17:58:39,820 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 17:58:39,821 - app.services.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 17:58:40,475 - ragas.executor - ERROR - Exception raised in Job[1]: AuthenticationError(Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401})
+2025-12-12 17:58:40,483 - ragas.executor - ERROR - Exception raised in Job[0]: AuthenticationError(Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401})
+2025-12-12 17:58:40,833 - app.services.evaluation_service - ERROR - Error during evaluation: TypeError("float() argument must be a string or a real number, not 'list'")
+2025-12-12 17:59:18,285 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 17:59:18,286 - app.services.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 17:59:18,787 - ragas.executor - ERROR - Exception raised in Job[1]: AuthenticationError(Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401})
+2025-12-12 17:59:18,804 - ragas.executor - ERROR - Exception raised in Job[0]: AuthenticationError(Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401})
+2025-12-12 17:59:19,152 - app.services.evaluation_service - INFO - Evaluation scores: {'faithfulness': 1.0, 'answer_relevancy': 1.0}
+2025-12-12 18:07:29,542 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:10:01,238 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:10:01,238 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:10:01,242 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:10:11,725 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:10:11,725 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:10:11,743 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:10:11,743 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:10:12,122 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:12,122 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:12,144 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_4794cb93-1d04-4cf5-a5c4-ea74d2917881 initialized
+2025-12-12 18:10:12,144 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_e18174fe-5c58-4aa7-bc2c-e4eb716b7f4f initialized
+2025-12-12 18:10:16,151 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:10:16,154 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:16,235 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:10:16,237 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:16,885 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:10:16,889 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:10:16,940 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:10:16,961 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:10:16,965 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:10:17,025 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:10:17,409 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:10:17,424 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:10:17,429 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:10:17,441 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:10:17,460 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:10:17,471 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:10:17,506 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:10:17,521 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:10:17,526 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:10:17,538 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:10:17,557 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:10:17,568 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:10:17,611 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:10:17,624 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:10:17,643 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:10:17,658 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:10:17,668 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:10:17,672 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:10:17,674 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:10:17,678 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:10:17,687 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:10:17,703 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:10:17,706 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:10:17,718 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:10:17,725 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:10:17,729 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:10:17,733 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:10:17,736 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:10:17,737 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:10:17,751 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:10:17,761 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:10:17,763 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:10:17,765 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:10:17,767 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:10:17,771 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:10:17,779 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:10:17,795 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:10:17,817 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:10:17,821 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:10:17,825 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:10:17,829 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:10:17,853 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:10:18,460 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:10:18,464 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:18,481 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:18,482 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:18,485 - app.core.observability_config - INFO - ✅ Traceloop SDK initialized
+2025-12-12 18:10:18,488 - app.core.observability_config - INFO - ✅ Observability initialized successfully
+2025-12-12 18:10:18,491 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:10:18,495 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:10:18,499 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:10:18,542 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:10:18,545 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:18,547 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:18,548 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:18,550 - app.core.observability_config - INFO - ✅ Traceloop SDK initialized
+2025-12-12 18:10:18,554 - app.core.observability_config - INFO - ✅ Observability initialized successfully
+2025-12-12 18:10:18,557 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:10:18,560 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:10:18,564 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:10:29,158 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:10:29,158 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:10:29,178 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:10:29,178 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:10:29,548 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:29,551 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:29,569 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_5c14dea6-71e3-46f8-9748-906e908d7e0e initialized
+2025-12-12 18:10:29,571 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_fc5d8011-6b9b-48c4-875c-2153cf46758a initialized
+2025-12-12 18:10:33,126 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:10:33,129 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:33,371 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:10:33,374 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:10:33,778 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:10:33,782 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:10:33,831 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:10:34,024 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:10:34,027 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:10:34,081 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:10:34,233 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:10:34,248 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:10:34,253 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:10:34,265 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:10:34,283 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:10:34,294 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:10:34,433 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:10:34,445 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:10:34,464 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:10:34,473 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:10:34,480 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:10:34,488 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:10:34,490 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:10:34,493 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:10:34,494 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:10:34,496 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:10:34,499 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:10:34,505 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:10:34,508 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:10:34,523 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:10:34,523 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:10:34,533 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:10:34,545 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:10:34,549 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:10:34,553 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:10:34,556 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:10:34,581 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:10:34,667 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:10:34,679 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:10:34,709 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:10:34,725 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:10:34,735 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:10:34,740 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:10:34,742 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:10:34,747 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:10:34,756 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:10:34,772 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:10:34,793 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:10:34,797 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:10:34,801 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:10:34,804 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:10:34,827 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:10:35,242 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:10:35,257 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:35,263 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:35,264 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:35,266 - app.core.observability_config - INFO - ✅ Traceloop SDK initialized
+2025-12-12 18:10:35,270 - app.core.observability_config - INFO - ✅ Observability initialized successfully
+2025-12-12 18:10:35,273 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:10:35,484 - phoenix.session.session - ERROR - 💥 Phoenix failed to start. Please try again (making sure that port 6006 is not occupied by another process) or file an issue with us at https://github.com/Arize-ai/phoenix
+2025-12-12 18:10:35,486 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'NoneType' object has no attribute 'url'
+2025-12-12 18:10:35,489 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:10:35,492 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:35,494 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:35,495 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:10:35,497 - app.core.observability_config - INFO - ✅ Traceloop SDK initialized
+2025-12-12 18:10:35,500 - app.core.observability_config - INFO - ✅ Observability initialized successfully
+2025-12-12 18:10:35,503 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:13:42,248 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:13:42,264 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:13:42,631 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:13:42,649 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_81772800-4a63-45a9-996b-add8783b7120 initialized
+2025-12-12 18:13:46,184 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:13:46,185 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:13:46,842 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:13:46,842 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:13:46,900 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:13:47,344 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:13:47,358 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:13:47,362 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:13:47,373 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:13:47,391 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:13:47,408 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:13:47,555 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:13:47,565 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:13:47,583 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:13:47,598 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:13:47,608 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:13:47,613 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:13:47,622 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:13:47,626 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:13:47,634 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:13:47,650 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:13:47,679 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:13:47,688 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:13:47,692 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:13:47,695 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:13:47,728 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:13:48,383 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:13:48,384 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:13:48,384 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:13:48,384 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:13:48,385 - app.core.observability_config - INFO - ✅ Traceloop SDK initialized
+2025-12-12 18:13:48,393 - app.core.observability_config - INFO - ✅ Observability initialized successfully
+2025-12-12 18:13:48,395 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:14:02,281 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:14:02,284 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:14:12,848 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:14:12,866 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:14:13,241 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:14:13,261 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_673eb0f3-4bc7-4bbf-9269-cdfb0a34b9c5 initialized
+2025-12-12 18:14:17,228 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:14:17,230 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:14:17,868 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:14:17,872 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:14:17,926 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:14:18,336 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:14:18,350 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:14:18,355 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:14:18,366 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:14:18,385 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:14:18,395 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:14:18,527 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:14:18,538 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:14:18,556 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:14:18,571 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:14:18,581 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:14:18,584 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:14:18,586 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:14:18,590 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:14:18,599 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:14:18,615 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:14:18,639 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:14:18,643 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:14:18,647 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:14:18,651 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:14:18,678 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:14:19,337 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:14:19,354 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:14:19,356 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:14:19,358 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:14:19,360 - app.core.observability_config - INFO - ✅ Traceloop SDK initialized
+2025-12-12 18:14:19,364 - app.core.observability_config - INFO - ✅ Observability initialized successfully
+2025-12-12 18:14:19,367 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:14:19,370 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:14:19,374 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:14:30,047 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:14:30,065 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:14:30,426 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:14:30,446 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_dec71c04-c433-4791-b3d3-62a0b312b37b initialized
+2025-12-12 18:14:34,261 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:14:34,263 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:14:34,914 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:14:34,918 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:14:34,966 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:14:35,320 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:14:35,334 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:14:35,338 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:14:35,349 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:14:35,367 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:14:35,377 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:14:35,507 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:14:35,518 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:14:35,535 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:14:35,549 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:14:35,559 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:14:35,562 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:14:35,564 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:14:35,567 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:14:35,575 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:14:35,590 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:14:35,611 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:14:35,615 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:14:35,619 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:14:35,623 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:14:35,648 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:14:36,288 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:14:36,292 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:14:36,309 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:14:36,310 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:14:36,312 - app.core.observability_config - INFO - ✅ Traceloop SDK initialized
+2025-12-12 18:14:36,316 - app.core.observability_config - INFO - ✅ Observability initialized successfully
+2025-12-12 18:14:36,319 - app.core.observability_config - INFO - 📊 Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:16:08,017 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:16:08,018 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:19:14,957 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:19:14,973 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:19:15,336 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:19:15,354 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_dfc4ac8d-7c8d-49c8-bc9a-a9d3e24e54b0 initialized
+2025-12-12 18:19:19,347 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:19:19,348 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:19:19,978 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:19:19,978 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:19:20,031 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:19:20,409 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:19:20,423 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:19:20,427 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:19:20,437 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:19:20,455 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:19:20,464 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:19:20,600 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:19:20,611 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:19:20,628 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:19:20,643 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:19:20,652 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:19:20,655 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:19:20,656 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:19:20,659 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:19:20,667 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:19:20,682 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:19:20,703 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:19:20,706 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:19:20,710 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:19:20,713 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:19:20,735 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:19:21,417 - phoenix.session.session - ERROR - 💥 Phoenix failed to start. Please try again (making sure that port 6006 is not occupied by another process) or file an issue with us at https://github.com/Arize-ai/phoenix
+2025-12-12 18:19:21,419 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'NoneType' object has no attribute 'url'
+2025-12-12 18:19:21,420 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:19:21,420 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:19:21,420 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:19:21,420 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:19:21,421 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:19:21,422 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:19:21,422 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:19:21,422 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:19:21,423 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:19:31,776 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:19:31,792 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:19:32,148 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:19:32,166 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_a306bf68-1432-4f0f-9f61-343611f36bed initialized
+2025-12-12 18:19:35,688 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:19:35,689 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:19:36,342 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:19:36,343 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:19:36,399 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:19:36,766 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:19:36,780 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:19:36,787 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:19:36,800 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:19:36,819 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:19:36,829 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:19:36,975 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:19:36,987 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:19:37,004 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:19:37,019 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:19:37,040 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:19:37,044 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:19:37,045 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:19:37,048 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:19:37,057 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:19:37,072 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:19:37,102 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:19:37,105 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:19:37,109 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:19:37,113 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:19:37,143 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:19:37,808 - sqlalchemy.pool.impl.StaticPool - ERROR - Exception terminating connection <AdaptedConnection <Connection(Thread-4, stopped daemon 6236)>>
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 377, in _close_connection
+    self._dialect.do_terminate(connection)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 698, in do_terminate
+    self.do_close(dbapi_connection)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 701, in do_close
+    dbapi_connection.close()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 275, in close
+    self.await_(self._connection.close())
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\aiosqlite\core.py", line 168, in close
+    await self._execute(self._conn.close)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\aiosqlite\core.py", line 122, in _execute
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+2025-12-12 18:19:37,888 - phoenix.server.daemons.generative_model_store - ERROR - Failed to refresh generative models
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\uvicorn\server.py", line 161, in startup
+    server = await loop.create_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 1577, in create_server
+    raise OSError(err.errno, msg) from None
+OSError: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 6006): [winerror 10048] only one usage of each socket address (protocol/network address/port) is normally permitted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 673, in run_until_complete
+    self.run_forever()
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 640, in run_forever
+    self._run_once()
+  File "C:\Program Files\Python312\Lib\asyncio\base_events.py", line 1992, in _run_once
+    handle._run()
+  File "C:\Program Files\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\uvicorn\server.py", line 79, in serve
+    await self.startup(sockets=sockets)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\uvicorn\server.py", line 171, in startup
+    sys.exit(1)
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 263, in rollback
+    self.await_(self._connection.rollback())
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\aiosqlite\core.py", line 159, in rollback
+    await self._execute(self._conn.rollback)
+                        ^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\aiosqlite\core.py", line 73, in _conn
+    raise ValueError("no active connection")
+ValueError: no active connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1119, in _rollback_impl
+    self.engine.dialect.do_rollback(self.connection)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 692, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 265, in rollback
+    self._handle_exception(error)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 294, in _handle_exception
+    raise self.dbapi.sqlite.OperationalError(
+sqlite3.OperationalError: no active connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\phoenix\server\daemons\generative_model_store.py", line 65, in _run
+    await self._fetch_models()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\phoenix\server\daemons\generative_model_store.py", line 94, in _fetch_models
+    async with self._db() as session:
+               ^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 231, in __aexit__
+    await self.gen.athrow(value)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\phoenix\server\app.py", line 432, in factory
+    async with contextlib.AsyncExitStack() as stack:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 754, in __aexit__
+    raise exc_details[1]
+  File "C:\Program Files\Python312\Lib\contextlib.py", line 737, in __aexit__
+    cb_suppress = await cb(*exc_details)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1812, in __aexit__
+    await asyncio.shield(task)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1808, in go
+    await self.trans.__aexit__(type_, value, traceback)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 1880, in __aexit__
+    await greenlet_spawn(
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 192, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\util.py", line 161, in __exit__
+    self.rollback()
+  File "<string>", line 2, in rollback
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1338, in rollback
+    raise rollback_err[1].with_traceback(rollback_err[2])
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1303, in rollback
+    t[1].rollback()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2598, in rollback
+    self._do_rollback()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2717, in _do_rollback
+    self._close_impl(try_deactivate=True)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2700, in _close_impl
+    self._connection_rollback_impl()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2692, in _connection_rollback_impl
+    self.connection._rollback_impl()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1121, in _rollback_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1119, in _rollback_impl
+    self.engine.dialect.do_rollback(self.connection)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 692, in do_rollback
+    dbapi_connection.rollback()
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 265, in rollback
+    self._handle_exception(error)
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\sqlalchemy\dialects\sqlite\aiosqlite.py", line 294, in _handle_exception
+    raise self.dbapi.sqlite.OperationalError(
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no active connection
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-12 18:19:42,969 - app.core.observability_config - ERROR - Failed to launch Phoenix: server took too long to start
+2025-12-12 18:19:42,971 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:19:42,973 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:19:42,973 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:19:42,973 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:19:42,975 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:19:42,975 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:19:42,975 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:19:58,275 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:19:58,280 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:20:08,547 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:20:08,562 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:20:08,909 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:20:08,926 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_0f178c91-cb98-401b-aeab-f88e4805bd44 initialized
+2025-12-12 18:20:12,451 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:20:12,451 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:20:12,452 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:20:12,452 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:20:12,452 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:20:12,452 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:20:12,452 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:20:12,453 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:20:12,454 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:20:12,454 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:20:12,454 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:20:12,455 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:20:22,692 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:20:22,708 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:20:23,065 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:20:23,083 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_6b8b01c4-45ae-4682-adc9-284fc081b59c initialized
+2025-12-12 18:20:26,591 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:20:26,591 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:20:26,591 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:20:26,591 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:20:26,592 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:20:26,592 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:20:26,592 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:20:26,593 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:20:26,593 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:20:26,593 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:23:08,085 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:23:08,086 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:28:31,872 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:28:31,887 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:28:32,258 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:28:32,275 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_f2381161-7791-47e4-b32a-5b1dfd096d06 initialized
+2025-12-12 18:28:35,752 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:28:35,753 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:28:36,386 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:28:36,386 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:28:36,433 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:28:36,783 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:28:36,797 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:28:36,801 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:28:36,811 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:28:36,828 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:28:36,838 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:28:36,974 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:28:36,985 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:28:37,002 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:28:37,018 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:28:37,027 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:28:37,031 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:28:37,032 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:28:37,035 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:28:37,044 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:28:37,067 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:28:37,088 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:28:37,091 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:28:37,095 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:28:37,098 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:28:37,120 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:28:37,761 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:28:37,762 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:28:37,763 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:28:37,763 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:28:37,764 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:28:37,765 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:28:37,776 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:30:33,032 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:30:33,033 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:30:43,569 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:30:43,585 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:30:43,951 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:30:43,969 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_57c7c9d3-8767-471d-9311-4cef508c760f initialized
+2025-12-12 18:30:48,596 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:30:48,603 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:30:49,443 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:30:49,444 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:30:49,504 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:30:49,964 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:30:49,979 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:30:49,984 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:30:49,995 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:30:50,049 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:30:50,059 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:30:50,193 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:30:50,204 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:30:50,222 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:30:50,240 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:30:50,251 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:30:50,254 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:30:50,256 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:30:50,260 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:30:50,270 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:30:50,293 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:30:50,332 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:30:50,347 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:30:50,351 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:30:50,355 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:30:50,378 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:30:51,046 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:30:51,061 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:30:51,062 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:30:51,062 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:30:51,064 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:30:51,064 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:30:51,065 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:31:16,227 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:31:16,228 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:31:40,091 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:31:40,113 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:31:41,113 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:31:41,137 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_9517d418-bd4f-4aa6-a438-f67a6b22208e initialized
+2025-12-12 18:31:53,436 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:31:53,464 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:31:55,387 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:31:55,387 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:31:55,535 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:31:56,024 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:31:56,042 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:31:56,047 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:31:56,060 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:31:56,087 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:31:56,098 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:31:56,315 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:31:56,384 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:31:56,427 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:31:56,483 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:31:56,508 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:31:56,513 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:31:56,516 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:31:56,522 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:31:56,538 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:31:56,576 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:31:56,638 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:31:56,644 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:31:56,649 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:31:56,700 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:31:56,736 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:31:57,884 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:31:57,885 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:31:57,886 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:31:57,886 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:31:57,906 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:31:57,907 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:31:57,907 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:31:57,907 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:31:57,908 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:32:05,166 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:32:05,172 - app.core.observability_config - INFO - ✅ Observability shutdown complete
+2025-12-12 18:32:21,295 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:32:21,320 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:32:22,470 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:32:22,660 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_bea13319-63a9-4f0b-bf0c-9b1142368af0 initialized
+2025-12-12 18:32:34,304 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:32:34,305 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:32:34,475 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:32:34,492 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:32:35,670 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:32:35,844 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_cc9b71a5-961a-4c21-a415-70a34be30712 initialized
+2025-12-12 18:32:36,261 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:32:36,266 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:32:36,332 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:32:36,821 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:32:36,843 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:32:36,860 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:32:36,882 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:32:36,903 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:32:36,920 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:32:37,157 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:32:37,195 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:32:37,241 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:32:37,284 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:32:37,306 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:32:37,321 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:32:37,323 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:32:37,331 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:32:37,359 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:32:37,389 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:32:37,435 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:32:37,449 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:32:37,453 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:32:37,459 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:32:37,522 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:32:38,480 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:32:38,481 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:32:38,481 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:32:38,482 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:32:38,501 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:32:38,501 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:32:38,502 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:32:38,502 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:32:38,503 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:32:41,746 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:32:41,748 - app.services.token_optimizer - INFO - Truncating context to fit token limit...
+2025-12-12 18:32:41,748 - app.services.token_optimizer - INFO - Context truncated. Kept 3/5 messages.
+2025-12-12 18:32:41,954 - app.services.token_optimizer - INFO - Summarizing context to fit token limit...
+2025-12-12 18:32:41,955 - app.services.token_optimizer - INFO - Generated summary: Summarized content...
+2025-12-12 18:32:45,365 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:32:45,365 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:32:45,366 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:32:45,366 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:32:45,366 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:32:45,366 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:32:45,367 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:32:45,375 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:32:45,375 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:32:45,375 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:32:45,376 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:32:45,377 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:32:54,085 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:32:54,103 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:32:54,507 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:32:54,527 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_b44c01a3-2d37-43d0-986d-2fd02ae8bea4 initialized
+2025-12-12 18:32:58,386 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:32:58,402 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:32:58,757 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:32:58,773 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_52586629-ae76-449e-a653-d841e3b38d9f initialized
+2025-12-12 18:32:59,665 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:32:59,666 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:33:00,309 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:33:00,310 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:33:00,357 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:33:00,863 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:33:00,879 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:33:00,889 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:33:00,902 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:33:01,001 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:33:01,028 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:33:01,371 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:33:01,437 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:33:01,455 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:33:01,786 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:33:01,797 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:33:01,801 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:33:01,802 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:33:01,807 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:33:01,817 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:33:01,835 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:33:01,862 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:33:01,871 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:33:01,879 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:33:01,882 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:33:01,907 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:33:02,636 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:33:02,638 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:02,638 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:02,638 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:02,650 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:33:02,651 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:33:02,654 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:33:03,027 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:33:03,028 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:33:03,028 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:33:03,028 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:33:03,029 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:03,029 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:03,029 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:03,036 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:33:03,036 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:33:03,036 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:33:03,037 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:33:03,038 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:33:13,078 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:33:13,094 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:33:13,487 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:33:13,506 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_3b74c134-c5c7-4ed7-827b-da880bdb680f initialized
+2025-12-12 18:33:18,097 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:33:18,098 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:33:18,098 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:33:18,098 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:33:18,099 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:18,099 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:18,099 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:33:18,100 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:33:18,101 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:33:18,101 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:35:33,580 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:35:33,581 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:37:05,808 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:37:05,839 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:37:06,390 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:37:06,520 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_a8f67876-bfac-46f3-a3c7-212dd001f23e initialized
+2025-12-12 18:37:17,909 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:37:17,911 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:37:18,801 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:37:18,801 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:37:18,877 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:37:19,502 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:37:19,522 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:37:19,530 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:37:19,542 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:37:19,562 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:37:19,573 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:37:19,781 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:37:19,825 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:37:19,876 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:37:19,906 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:37:19,920 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:37:19,944 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:37:19,947 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:37:19,952 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:37:19,965 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:37:20,031 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:37:20,079 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:37:20,089 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:37:20,094 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:37:20,098 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:37:20,144 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:37:21,059 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:37:21,064 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:37:21,065 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:37:21,066 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:37:21,070 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:37:21,071 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:37:21,072 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:37:21,073 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:37:21,075 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:37:41,179 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:37:41,197 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:37:41,607 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:37:41,629 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_bdab535d-b2b8-4353-af5c-094bbe47eb51 initialized
+2025-12-12 18:37:45,955 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:37:45,956 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:37:46,723 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:37:46,724 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:37:46,804 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:37:47,270 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:37:47,284 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:37:47,288 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:37:47,299 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:37:47,316 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:37:47,325 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:37:47,454 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:37:47,465 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:37:47,483 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:37:47,497 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:37:47,506 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:37:47,509 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:37:47,511 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:37:47,514 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:37:47,521 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:37:47,537 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:37:47,559 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:37:47,565 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:37:47,575 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:37:47,582 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:37:47,703 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:37:48,840 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:37:48,841 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:37:48,844 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:37:48,844 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:37:48,917 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:37:48,918 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:37:48,918 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:37:48,919 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:37:48,928 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:37:58,887 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:37:58,903 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:37:59,297 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:37:59,424 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_d93e4a1c-d4d5-41df-8b48-377f5fb70d42 initialized
+2025-12-12 18:38:03,097 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:38:03,097 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:38:03,744 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:38:03,744 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:38:03,793 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:38:04,196 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:38:04,211 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:38:04,216 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:38:04,226 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:38:04,251 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:38:04,261 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:38:04,407 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:38:04,419 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:38:04,436 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:38:04,451 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:38:04,461 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:38:04,464 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:38:04,465 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:38:04,470 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:38:04,479 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:38:04,496 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:38:04,518 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:38:04,522 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:38:04,525 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:38:04,528 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:38:04,556 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:38:05,211 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:38:05,212 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:05,213 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:05,213 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:05,225 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:38:05,229 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:38:05,230 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:38:05,231 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:38:05,231 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:38:15,313 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:38:15,331 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:38:15,717 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:38:15,736 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_0123f22a-0f12-4979-8ff9-c1cae54bfea8 initialized
+2025-12-12 18:38:19,943 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:38:19,944 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:38:20,664 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:38:20,664 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:38:20,734 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:38:21,213 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:38:21,227 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:38:21,231 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:38:21,242 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:38:21,261 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:38:21,271 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:38:21,414 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:38:21,425 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:38:21,442 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:38:21,458 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:38:21,468 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:38:21,471 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:38:21,472 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:38:21,475 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:38:21,484 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:38:21,498 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:38:21,524 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:38:21,527 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:38:21,530 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:38:21,534 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:38:21,561 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:38:22,395 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:38:22,396 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:22,396 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:22,397 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:22,398 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:38:22,399 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:38:22,410 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:38:22,414 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:38:22,414 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:38:34,542 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:38:34,559 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:38:35,035 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:38:35,055 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_1e9f2fd7-85d4-44ea-a39a-7b5a399b60c0 initialized
+2025-12-12 18:38:40,521 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:38:40,541 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:38:41,312 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:38:41,313 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:38:41,370 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:38:41,887 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:38:41,888 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:38:41,897 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:38:41,979 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:38:41,994 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:38:41,999 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:38:42,011 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:38:42,033 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:38:42,052 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:38:42,276 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:38:42,288 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:38:42,310 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:38:42,336 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:38:42,365 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:38:42,369 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:38:42,380 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:38:42,384 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:38:42,395 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:38:42,422 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:38:42,463 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:38:42,470 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:38:42,509 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:38:42,513 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:38:42,568 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:38:42,764 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:38:43,425 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:38:43,635 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:43,656 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:43,660 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:38:43,837 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:38:43,840 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:38:43,845 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:38:45,049 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:39:02,290 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:39:02,291 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:39:13,323 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:39:13,339 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:39:13,942 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:39:13,970 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_682d4a84-24f6-4c0e-b788-8ae1f9a9cb1c initialized
+2025-12-12 18:39:17,761 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:39:17,929 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:39:17,931 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:39:17,957 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:39:18,318 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:39:18,646 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:39:18,646 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:39:18,763 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:39:19,010 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:39:19,104 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:39:19,463 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:39:19,477 - app.api.sessions - ERROR - Error generating AI response: (sqlite3.OperationalError) no such column: message.token_count
+[SQL: SELECT message.id, message.session_id, message.content, message.sender, message.timestamp, message.file_url, message.file_name, message.token_count, message.cost, message.carbon_footprint, message.evaluation_scores, message.is_flagged 
+FROM message 
+WHERE message.session_id = ? ORDER BY message.timestamp]
+[parameters: ('11f1bf48-daae-4ac3-bd14-a7ee61cdca26',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-12 18:39:19,478 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:39:19,482 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:39:19,494 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:39:19,511 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:39:19,521 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:39:19,661 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:39:19,703 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:39:19,723 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:39:19,741 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:39:19,764 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:39:19,771 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:39:19,772 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:39:19,778 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:39:19,786 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:39:19,804 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:39:19,836 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:39:19,843 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:39:19,848 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:39:19,853 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:39:19,887 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:39:20,585 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:39:20,599 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:39:20,603 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:39:20,603 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:39:20,605 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:39:20,605 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:39:20,605 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:39:21,199 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:39:21,270 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:39:21,465 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:39:21,581 - app.services.llm.token_optimizer - INFO - Truncating context to fit token limit...
+2025-12-12 18:39:21,581 - app.services.llm.token_optimizer - INFO - Context truncated. Kept 3/5 messages.
+2025-12-12 18:39:21,584 - app.services.llm.token_optimizer - INFO - Summarizing context to fit token limit...
+2025-12-12 18:39:21,585 - app.services.llm.token_optimizer - INFO - Generated summary: Summarized content...
+2025-12-12 18:39:39,903 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:39:40,300 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:39:40,692 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:39:40,846 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:40:09,100 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:40:09,101 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:40:19,320 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:40:19,337 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:40:19,701 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:40:19,719 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_c68024c5-1349-46ff-92f3-bf25596dddf1 initialized
+2025-12-12 18:40:23,796 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:40:23,796 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:40:24,499 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:40:24,500 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:40:24,555 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:40:25,289 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:40:25,304 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:40:25,308 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:40:25,321 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:40:25,345 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:40:25,355 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:40:25,513 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:40:25,525 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:40:25,543 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:40:25,561 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:40:25,573 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:40:25,580 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:40:25,590 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:40:25,607 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:40:25,632 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:40:25,663 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:40:25,693 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:40:25,712 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:40:25,717 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:40:25,722 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:40:25,761 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:40:26,439 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:40:26,448 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:40:26,452 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:40:26,453 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:40:26,457 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:40:26,457 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:40:26,457 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:40:26,458 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:40:26,458 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:40:36,677 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:40:36,693 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:40:37,085 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:40:37,104 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_94b98c74-f6e8-411a-aea2-0967721ba783 initialized
+2025-12-12 18:40:38,481 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:40:38,684 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:40:39,031 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:40:39,777 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:40:39,884 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:40:40,078 - app.api.sessions - ERROR - Error generating AI response: (sqlite3.OperationalError) no such column: message.token_count
+[SQL: SELECT message.id, message.session_id, message.content, message.sender, message.timestamp, message.file_url, message.file_name, message.token_count, message.cost, message.carbon_footprint, message.evaluation_scores, message.is_flagged 
+FROM message 
+WHERE message.session_id = ? ORDER BY message.timestamp]
+[parameters: ('b116ffac-65ba-46d1-a180-666c1fd1e6a6',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-12 18:40:40,929 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:40:40,941 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:40:41,625 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:40:41,626 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:40:41,675 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:40:41,867 - app.services.llm.evaluation_service - INFO - Evaluation scores: {'faithfulness': 0.8, 'answer_relevancy': 0.9}
+2025-12-12 18:40:41,871 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:40:41,875 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:40:41,879 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:40:41,883 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:40:41,883 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 2/3). Retrying...
+2025-12-12 18:40:41,948 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:40:41,965 - app.services.llm.token_optimizer - INFO - Truncating context to fit token limit...
+2025-12-12 18:40:41,965 - app.services.llm.token_optimizer - INFO - Context truncated. Kept 3/5 messages.
+2025-12-12 18:40:41,969 - app.services.llm.token_optimizer - INFO - Summarizing context to fit token limit...
+2025-12-12 18:40:41,969 - app.services.llm.token_optimizer - INFO - Generated summary: Summarized content...
+2025-12-12 18:40:42,224 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:40:42,238 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:40:42,242 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:40:42,252 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:40:42,270 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:40:42,279 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:40:42,493 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:40:42,505 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:40:42,525 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:40:42,542 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:40:42,562 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:40:42,565 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:40:42,566 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:40:42,570 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:40:42,579 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:40:42,595 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:40:42,617 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:40:42,620 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:40:42,624 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:40:42,627 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:40:42,659 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:40:43,468 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:40:43,478 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:40:43,484 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:40:43,485 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:40:43,508 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:40:43,508 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:40:43,508 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:40:43,509 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:40:43,510 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:40:53,345 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:40:53,372 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:40:53,917 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:40:53,937 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_4576046a-2917-4f4b-a4dd-2b4be1d04340 initialized
+2025-12-12 18:40:58,481 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:40:58,485 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:40:59,446 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:40:59,447 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:40:59,520 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:41:00,079 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:41:00,101 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:41:00,105 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:41:00,116 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:41:00,136 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:41:00,147 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:41:00,287 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:41:00,300 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:41:00,320 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:41:00,341 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:41:00,352 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:41:00,358 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:41:00,360 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:41:00,370 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:41:00,383 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:41:00,400 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:41:00,424 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:41:00,428 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:41:00,432 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:41:00,437 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:41:00,470 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:41:01,147 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:41:01,147 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:01,148 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:01,148 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:01,149 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:41:01,149 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:41:01,150 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:41:03,481 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:41:03,824 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:41:03,908 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:41:04,228 - app.services.llm.evaluation_service - INFO - Evaluation scores: {'faithfulness': 0.8, 'answer_relevancy': 0.9}
+2025-12-12 18:41:04,232 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:41:04,236 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:41:04,476 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:41:04,481 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:41:04,485 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:41:04,486 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 2/3). Retrying...
+2025-12-12 18:41:20,021 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:41:20,022 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:41:30,507 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:41:30,524 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:41:30,895 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:41:30,912 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_0162e9ec-bea6-4221-b211-9dda916a6fbd initialized
+2025-12-12 18:41:34,808 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:41:34,808 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:41:35,448 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:41:35,449 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:41:35,510 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:41:35,927 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:41:35,941 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:41:35,946 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:41:35,956 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:41:35,988 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:41:35,999 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:41:36,140 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:41:36,151 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:41:36,168 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:41:36,183 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:41:36,191 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:41:36,195 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:41:36,198 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:41:36,201 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:41:36,215 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:41:36,231 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:41:36,252 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:41:36,255 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:41:36,261 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:41:36,264 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:41:36,301 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:41:36,974 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:41:36,975 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:36,975 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:36,975 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:36,987 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:41:36,991 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:41:36,991 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:41:36,992 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:41:36,992 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:41:37,889 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:41:38,073 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:41:38,715 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:41:39,418 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:41:39,506 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:41:39,763 - app.api.sessions - ERROR - Error generating AI response: (sqlite3.OperationalError) no such column: message.token_count
+[SQL: SELECT message.id, message.session_id, message.content, message.sender, message.timestamp, message.file_url, message.file_name, message.token_count, message.cost, message.carbon_footprint, message.evaluation_scores, message.is_flagged 
+FROM message 
+WHERE message.session_id = ? ORDER BY message.timestamp]
+[parameters: ('9a8ac79f-d6ab-4edb-aff4-2a233dee2af4',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-12 18:41:41,127 - app.services.llm.evaluation_service - INFO - Evaluation scores: {'faithfulness': 0.8, 'answer_relevancy': 0.9}
+2025-12-12 18:41:41,131 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:41:41,135 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:41:41,139 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:41:41,143 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:41:41,144 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 2/3). Retrying...
+2025-12-12 18:41:41,210 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:41:41,223 - app.services.llm.token_optimizer - INFO - Truncating context to fit token limit...
+2025-12-12 18:41:41,223 - app.services.llm.token_optimizer - INFO - Context truncated. Kept 3/5 messages.
+2025-12-12 18:41:41,227 - app.services.llm.token_optimizer - INFO - Summarizing context to fit token limit...
+2025-12-12 18:41:41,227 - app.services.llm.token_optimizer - INFO - Generated summary: Summarized content...
+2025-12-12 18:41:47,657 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:41:47,674 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:41:48,059 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:41:48,076 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_a4086bbe-4e5a-48fd-9af1-b6de95a0f7b2 initialized
+2025-12-12 18:41:52,126 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:41:52,126 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:41:52,762 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:41:52,762 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:41:52,811 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:41:53,205 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:41:53,219 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:41:53,224 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:41:53,235 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:41:53,254 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:41:53,265 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:41:53,414 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:41:53,424 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:41:53,442 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:41:53,466 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:41:53,477 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:41:53,481 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:41:53,488 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:41:53,491 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:41:53,503 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:41:53,518 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:41:53,541 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:41:53,554 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:41:53,557 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:41:53,561 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:41:53,590 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:41:54,295 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:41:54,296 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:54,296 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:54,296 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:41:54,312 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:41:54,312 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:41:54,312 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:41:58,936 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:42:30,242 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:42:30,243 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:42:40,814 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:42:40,832 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:42:41,197 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:42:41,215 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_25f3cfa8-bd3f-4f6c-9902-692dbdf8a397 initialized
+2025-12-12 18:42:44,930 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:42:44,930 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:42:45,571 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:42:45,572 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:42:45,621 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:42:46,020 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:42:46,035 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:42:46,039 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:42:46,050 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:42:46,069 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:42:46,080 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:42:46,258 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:42:46,287 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:42:46,318 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:42:46,333 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:42:46,342 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:42:46,346 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:42:46,347 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:42:46,350 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:42:46,358 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:42:46,373 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:42:46,394 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:42:46,397 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:42:46,402 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:42:46,405 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:42:46,429 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:42:47,151 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:42:47,152 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:42:47,152 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:42:47,163 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:42:47,168 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:42:47,168 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:42:47,168 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:42:48,010 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:42:48,430 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:42:49,202 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:42:50,005 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:42:50,090 - app.services.llm.llm_service - ERROR - Error calling LLM: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+2025-12-12 18:42:50,282 - app.api.sessions - ERROR - Error generating AI response: (sqlite3.OperationalError) no such column: message.token_count
+[SQL: SELECT message.id, message.session_id, message.content, message.sender, message.timestamp, message.file_url, message.file_name, message.token_count, message.cost, message.carbon_footprint, message.evaluation_scores, message.is_flagged 
+FROM message 
+WHERE message.session_id = ? ORDER BY message.timestamp]
+[parameters: ('43cbb84b-9a88-4cb8-9bd1-9ac35ab619a2',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-12 18:42:51,642 - app.services.llm.evaluation_service - INFO - Evaluation scores: {'faithfulness': 0.8, 'answer_relevancy': 0.9}
+2025-12-12 18:42:51,655 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:42:51,661 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:42:51,665 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:42:51,669 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:42:51,670 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 2/3). Retrying...
+2025-12-12 18:42:51,744 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:42:51,763 - app.services.llm.token_optimizer - INFO - Truncating context to fit token limit...
+2025-12-12 18:42:51,763 - app.services.llm.token_optimizer - INFO - Context truncated. Kept 3/5 messages.
+2025-12-12 18:42:51,768 - app.services.llm.token_optimizer - INFO - Summarizing context to fit token limit...
+2025-12-12 18:42:51,768 - app.services.llm.token_optimizer - INFO - Generated summary: Summarized content...
+2025-12-12 18:43:17,087 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:43:17,101 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:43:32,018 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:43:32,035 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:43:32,418 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:43:32,435 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_bc0116ae-99af-43de-a77e-eb60150a0546 initialized
+2025-12-12 18:43:35,895 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:43:36,068 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:43:36,068 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:43:36,303 - app.api.sessions - ERROR - Error generating AI response: (sqlite3.OperationalError) no such column: message.token_count
+[SQL: SELECT message.id, message.session_id, message.content, message.sender, message.timestamp, message.file_url, message.file_name, message.token_count, message.cost, message.carbon_footprint, message.evaluation_scores, message.is_flagged 
+FROM message 
+WHERE message.session_id = ? ORDER BY message.timestamp]
+[parameters: ('7e9ed37b-59ac-481b-8ec6-e5114f1bad48',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-12 18:43:36,851 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 18:43:36,852 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 18:43:36,934 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 18:43:37,602 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 18:43:37,617 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 18:43:37,621 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 18:43:37,666 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 18:43:37,700 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 18:43:37,717 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 18:43:37,876 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 18:43:37,907 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 18:43:37,929 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 18:43:37,960 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 18:43:37,969 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 18:43:37,982 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 18:43:37,983 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 18:43:37,987 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 18:43:37,996 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 18:43:38,024 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 18:43:38,053 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 18:43:38,062 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 18:43:38,067 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 18:43:38,073 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 18:43:38,098 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 18:43:38,604 - app.services.llm.evaluation_service - INFO - Evaluation scores: {'faithfulness': 0.8, 'answer_relevancy': 0.9}
+2025-12-12 18:43:38,609 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:43:38,613 - app.services.llm.token_service - WARNING - Model azure/genailab-maas-gpt-35-turbo not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:43:38,614 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:43:38,629 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:43:38,633 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 1/3). Retrying...
+2025-12-12 18:43:38,634 - app.services.llm.llm_service - INFO - Response failed evaluation (Attempt 2/3). Retrying...
+2025-12-12 18:43:38,704 - app.services.llm.llm_service - WARNING - ❌ Missing API Configuration. Check .env file.
+2025-12-12 18:43:38,721 - app.services.llm.token_optimizer - INFO - Truncating context to fit token limit...
+2025-12-12 18:43:38,721 - app.services.llm.token_optimizer - INFO - Context truncated. Kept 3/5 messages.
+2025-12-12 18:43:38,725 - app.services.llm.token_optimizer - INFO - Summarizing context to fit token limit...
+2025-12-12 18:43:38,725 - app.services.llm.token_optimizer - INFO - Generated summary: Summarized content...
+2025-12-12 18:43:38,843 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 18:43:38,844 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:43:38,844 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:43:38,845 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:43:38,846 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:43:38,846 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:43:38,846 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:52:33,038 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:52:33,039 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:52:33,099 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:52:33,100 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:52:44,377 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:52:44,380 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:52:44,393 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:52:44,395 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:52:44,794 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:52:44,800 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:52:44,812 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_e24c1e4a-d2a5-4aec-8df9-ded67824adf5 initialized
+2025-12-12 18:52:44,816 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_a0ac4b50-9b48-4ad7-a337-f471cefbcf53 initialized
+2025-12-12 18:52:48,683 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:52:48,684 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:52:48,684 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:52:48,684 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:52:48,685 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:52:48,685 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:52:48,685 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:52:48,686 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:52:48,686 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:52:48,686 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:52:48,687 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:52:48,687 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:52:48,753 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:52:48,753 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:52:48,754 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:52:48,754 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:52:48,754 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:52:48,754 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:52:48,754 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:52:48,756 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:52:48,756 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:52:48,756 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:52:48,757 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:52:48,757 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:52:59,892 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:52:59,907 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:53:00,271 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:53:00,288 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_b56c58e1-b1eb-4ed6-9e48-5b7f29b2a4bf initialized
+2025-12-12 18:53:00,448 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:53:00,463 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 18:53:00,825 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:53:00,842 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_07d35f52-b1a1-41a1-91e5-119dae6e047a initialized
+2025-12-12 18:53:03,869 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:53:03,869 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:53:03,870 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:53:03,870 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:53:03,870 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:53:03,871 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:53:03,871 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:53:03,872 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:53:03,872 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:53:03,872 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:53:04,666 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 18:53:04,666 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 18:53:04,667 - app.core.observability_config - ERROR - Failed to launch Phoenix: 'charmap' codec can't encode characters in position 0-1: character maps to <undefined>
+2025-12-12 18:53:04,667 - app.core.observability_config - WARNING - Continuing without Phoenix UI...
+2025-12-12 18:53:04,667 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:53:04,667 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:53:04,668 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 18:53:04,669 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 18:53:04,669 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 18:53:04,669 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 18:53:34,965 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 18:53:34,966 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete

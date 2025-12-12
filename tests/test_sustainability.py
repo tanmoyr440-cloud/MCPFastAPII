@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import MagicMock, patch
 from app.services.observability import obs_manager
-from app.services.llm_service import LLMService, ModelType
+from app.services.llm.llm_service import LLMService, ModelType
 from app.services.ai_service import get_ai_response
 
 def test_calculate_carbon_footprint():
@@ -42,7 +42,7 @@ async def test_llm_service_returns_metrics():
         mock_get_llm.return_value = mock_llm
         
         # We also need to mock token_service because middleware uses it
-        with patch("app.services.token_service.token_service") as mock_token_service:
+        with patch("app.services.llm.token_service.token_service") as mock_token_service:
             mock_token_service.count_tokens.side_effect = [10, 20] # input, output
             
             # Ensure observability is enabled
