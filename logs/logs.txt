@@ -6214,3 +6214,638 @@ WHERE message.session_id = ? ORDER BY message.timestamp]
 2025-12-12 18:53:04,669 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
 2025-12-12 18:53:34,965 - app.core.observability_config - INFO - Shutting down observability...
 2025-12-12 18:53:34,966 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 18:58:38,414 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:59:23,807 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 18:59:25,062 - app.services.llm.token_service - WARNING - Model gemini-pro not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 18:59:25,931 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+2025-12-12 18:59:27,995 - app.services.llm.llm_service - ERROR - Error calling LLM: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-12 19:00:04,846 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:00:04,871 - app.services.llm.token_service - WARNING - Model gemini-1.5-flash not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 19:00:05,434 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods..
+2025-12-12 19:00:07,496 - app.services.llm.llm_service - ERROR - Error calling LLM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-12 19:01:41,382 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:01:41,403 - app.services.llm.token_service - WARNING - Model gemini-2.0-flash not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 19:01:41,840 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 18.176230238s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 18
+}
+].
+2025-12-12 19:01:43,917 - app.services.llm.llm_service - ERROR - Error calling LLM: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 16.096726961s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 16
+}
+]
+2025-12-12 19:09:37,429 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:11:21,321 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:11:33,273 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:11:44,908 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:11:51,641 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:11:51,661 - app.services.llm.token_service - WARNING - Model gemini-2.0-flash not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 19:11:52,010 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 8.007179613s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 8
+}
+].
+2025-12-12 19:11:54,076 - app.services.llm.llm_service - ERROR - Error calling LLM: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 5.937491672s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-12-12 19:12:39,978 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 19:12:39,979 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 19:12:39,991 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 19:12:39,992 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 19:12:51,315 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:12:51,315 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:12:51,330 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 19:12:51,332 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 19:12:51,495 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 19:12:51,495 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 19:12:51,513 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_7b5319cf-4580-4e03-a05d-007fe2004bb3 initialized
+2025-12-12 19:12:56,065 - app.core.observability_config - ERROR - Failed to initialize observability: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\app\core\observability_config.py", line 41, in initialize_observability
+    from traceloop.sdk import Traceloop
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\__init__.py", line 26, in <module>
+    from traceloop.sdk.fetcher import Fetcher
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\fetcher.py", line 18, in <module>
+    from traceloop.sdk.prompts.registry import PromptRegistry
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\__init__.py", line 1, in <module>
+    from traceloop.sdk.prompts.client import PromptRegistryClient
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\client.py", line 5, in <module>
+    from traceloop.sdk.tracing.tracing import set_managed_prompt_tracing_context
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\__init__.py", line 1, in <module>
+    from traceloop.sdk.tracing.context_manager import get_tracer
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\context_manager.py", line 3, in <module>
+    from traceloop.sdk.tracing.tracing import TracerWrapper
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\tracing.py", line 36, in <module>
+    from traceloop.sdk.utils.package_check import is_package_installed
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 11, in <module>
+    installed_packages = {name for dist in distributions() if (name := _get_package_name(dist)) is not None}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 6, in _get_package_name
+    return dist.name.lower()
+           ^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\importlib_metadata\__init__.py", line 547, in name
+    return md_none(self.metadata)['Name']
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-12-12 19:12:56,192 - app.core.observability_config - WARNING - Continuing without observability...
+2025-12-12 19:12:56,192 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 19:12:56,192 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 19:12:56,198 - app.core.observability_config - ERROR - Failed to initialize observability: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\app\core\observability_config.py", line 41, in initialize_observability
+    from traceloop.sdk import Traceloop
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\__init__.py", line 26, in <module>
+    from traceloop.sdk.fetcher import Fetcher
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\fetcher.py", line 18, in <module>
+    from traceloop.sdk.prompts.registry import PromptRegistry
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\__init__.py", line 1, in <module>
+    from traceloop.sdk.prompts.client import PromptRegistryClient
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\client.py", line 5, in <module>
+    from traceloop.sdk.tracing.tracing import set_managed_prompt_tracing_context
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\__init__.py", line 1, in <module>
+    from traceloop.sdk.tracing.context_manager import get_tracer
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\context_manager.py", line 3, in <module>
+    from traceloop.sdk.tracing.tracing import TracerWrapper
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\tracing.py", line 36, in <module>
+    from traceloop.sdk.utils.package_check import is_package_installed
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 11, in <module>
+    installed_packages = {name for dist in distributions() if (name := _get_package_name(dist)) is not None}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 6, in _get_package_name
+    return dist.name.lower()
+           ^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\importlib_metadata\__init__.py", line 547, in name
+    return md_none(self.metadata)['Name']
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-12-12 19:12:56,202 - app.core.observability_config - WARNING - Continuing without observability...
+2025-12-12 19:12:56,202 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 19:12:56,202 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 19:13:06,884 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:13:06,899 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 19:13:06,907 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:13:06,922 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 19:13:07,064 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 19:13:07,083 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_a7c80037-92e2-4db6-8b77-a13efeecf175 initialized
+2025-12-12 19:13:07,083 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 19:13:07,100 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_03a297f6-800b-4cee-ade6-6660de13384a initialized
+2025-12-12 19:13:09,036 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:13:09,052 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 19:13:09,219 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 19:13:09,237 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_26b3d039-1396-4036-b00b-722dd408e33c initialized
+2025-12-12 19:13:10,972 - app.core.observability_config - ERROR - Failed to initialize observability: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\app\core\observability_config.py", line 41, in initialize_observability
+    from traceloop.sdk import Traceloop
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\__init__.py", line 26, in <module>
+    from traceloop.sdk.fetcher import Fetcher
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\fetcher.py", line 18, in <module>
+    from traceloop.sdk.prompts.registry import PromptRegistry
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\__init__.py", line 1, in <module>
+    from traceloop.sdk.prompts.client import PromptRegistryClient
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\client.py", line 5, in <module>
+    from traceloop.sdk.tracing.tracing import set_managed_prompt_tracing_context
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\__init__.py", line 1, in <module>
+    from traceloop.sdk.tracing.context_manager import get_tracer
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\context_manager.py", line 3, in <module>
+    from traceloop.sdk.tracing.tracing import TracerWrapper
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\tracing.py", line 36, in <module>
+    from traceloop.sdk.utils.package_check import is_package_installed
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 11, in <module>
+    installed_packages = {name for dist in distributions() if (name := _get_package_name(dist)) is not None}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 6, in _get_package_name
+    return dist.name.lower()
+           ^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\importlib_metadata\__init__.py", line 547, in name
+    return md_none(self.metadata)['Name']
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-12-12 19:13:10,976 - app.core.observability_config - WARNING - Continuing without observability...
+2025-12-12 19:13:10,977 - app.core.observability_config - ERROR - Failed to initialize observability: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\app\core\observability_config.py", line 41, in initialize_observability
+    from traceloop.sdk import Traceloop
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\__init__.py", line 26, in <module>
+    from traceloop.sdk.fetcher import Fetcher
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\fetcher.py", line 18, in <module>
+    from traceloop.sdk.prompts.registry import PromptRegistry
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\__init__.py", line 1, in <module>
+    from traceloop.sdk.prompts.client import PromptRegistryClient
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\client.py", line 5, in <module>
+    from traceloop.sdk.tracing.tracing import set_managed_prompt_tracing_context
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\__init__.py", line 1, in <module>
+    from traceloop.sdk.tracing.context_manager import get_tracer
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\context_manager.py", line 3, in <module>
+    from traceloop.sdk.tracing.tracing import TracerWrapper
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\tracing.py", line 36, in <module>
+    from traceloop.sdk.utils.package_check import is_package_installed
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 11, in <module>
+    installed_packages = {name for dist in distributions() if (name := _get_package_name(dist)) is not None}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 6, in _get_package_name
+    return dist.name.lower()
+           ^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\importlib_metadata\__init__.py", line 547, in name
+    return md_none(self.metadata)['Name']
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-12-12 19:13:10,980 - app.core.observability_config - WARNING - Continuing without observability...
+2025-12-12 19:13:12,991 - app.core.observability_config - ERROR - Failed to initialize observability: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Workspace\Tanmoy\New folder\backend\app\core\observability_config.py", line 41, in initialize_observability
+    from traceloop.sdk import Traceloop
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\__init__.py", line 26, in <module>
+    from traceloop.sdk.fetcher import Fetcher
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\fetcher.py", line 18, in <module>
+    from traceloop.sdk.prompts.registry import PromptRegistry
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\__init__.py", line 1, in <module>
+    from traceloop.sdk.prompts.client import PromptRegistryClient
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\prompts\client.py", line 5, in <module>
+    from traceloop.sdk.tracing.tracing import set_managed_prompt_tracing_context
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\__init__.py", line 1, in <module>
+    from traceloop.sdk.tracing.context_manager import get_tracer
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\context_manager.py", line 3, in <module>
+    from traceloop.sdk.tracing.tracing import TracerWrapper
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\tracing\tracing.py", line 36, in <module>
+    from traceloop.sdk.utils.package_check import is_package_installed
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 11, in <module>
+    installed_packages = {name for dist in distributions() if (name := _get_package_name(dist)) is not None}
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\traceloop\sdk\utils\package_check.py", line 6, in _get_package_name
+    return dist.name.lower()
+           ^^^^^^^^^
+  File "C:\Workspace\Tanmoy\New folder\backend\.venv\Lib\site-packages\importlib_metadata\__init__.py", line 547, in name
+    return md_none(self.metadata)['Name']
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-12-12 19:13:12,995 - app.core.observability_config - WARNING - Continuing without observability...
+2025-12-12 19:14:21,706 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 19:14:21,707 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 19:17:57,796 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:17:57,814 - app.core.observability_config - INFO - Initializing observability infrastructure...
+2025-12-12 19:17:58,001 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 19:17:58,021 - phoenix.inferences.inferences - INFO - Dataset: phoenix_inferences_984022f1-21f4-48c3-be0c-6f7627bf9205 initialized
+2025-12-12 19:18:03,038 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:18:08,401 - app.core.observability_config - INFO - Starting Phoenix on 127.0.0.1:6006
+2025-12-12 19:18:08,405 - phoenix.config - INFO - 📋 Ensuring phoenix working directory: C:\Users\devuser\.phoenix
+2025-12-12 19:18:08,972 - alembic.runtime.migration - INFO - Context impl SQLiteImpl.
+2025-12-12 19:18:08,973 - alembic.runtime.migration - INFO - Will assume transactional DDL.
+2025-12-12 19:18:09,039 - alembic.runtime.migration - INFO - Running upgrade  -> cf03bd6bae1d, init
+2025-12-12 19:18:09,643 - alembic.runtime.migration - INFO - Running upgrade cf03bd6bae1d -> 10460e46d750, datasets
+2025-12-12 19:18:09,681 - alembic.runtime.migration - INFO - Running upgrade 10460e46d750 -> 3be8647b87d8, add token columns to spans table
+2025-12-12 19:18:09,688 - alembic.runtime.migration - INFO - Running upgrade 3be8647b87d8 -> cd164e83824f, users and tokens
+2025-12-12 19:18:09,719 - alembic.runtime.migration - INFO - Running upgrade cd164e83824f -> 4ded9e43755f, create project_session table
+2025-12-12 19:18:09,785 - alembic.runtime.migration - INFO - Running upgrade 4ded9e43755f -> bc8fea3c2bc8, Add prompt tables
+2025-12-12 19:18:09,798 - alembic.runtime.migration - INFO - Running upgrade bc8fea3c2bc8 -> 2f9d1a65945f, Annotation config migrations
+2025-12-12 19:18:10,386 - alembic.runtime.migration - INFO - Running upgrade 2f9d1a65945f -> bb8139330879, create project trace retention policies table
+2025-12-12 19:18:10,396 - alembic.runtime.migration - INFO - Running upgrade bb8139330879 -> 8a3764fe7f1a, change jsonb to json for prompts
+2025-12-12 19:18:10,486 - alembic.runtime.migration - INFO - Running upgrade 8a3764fe7f1a -> 6a88424799fe, Add auth_method column to users table and migrate existing authentication data.
+2025-12-12 19:18:10,513 - alembic.runtime.migration - INFO - Running upgrade 6a88424799fe -> a20694b15f82, Cost-related tables
+2025-12-12 19:18:10,528 - alembic.runtime.migration - INFO - Running upgrade a20694b15f82 -> 272b66ff50f8, drop single indices from traces, project_sessions, and experiment_runs
+2025-12-12 19:18:10,538 - alembic.runtime.migration - INFO - Running upgrade 272b66ff50f8 -> 735d3d93c33e, add composite indices to traces and project_sessions
+2025-12-12 19:18:10,541 - alembic.runtime.migration - INFO - Running upgrade 735d3d93c33e -> 0df286449799, add session annotations table
+2025-12-12 19:18:10,549 - alembic.runtime.migration - INFO - Running upgrade 0df286449799 -> 01a8342c9cdf, add user_id on datasets
+2025-12-12 19:18:10,568 - alembic.runtime.migration - INFO - Running upgrade 01a8342c9cdf -> ab513d89518b, add user_id on dataset_versions
+2025-12-12 19:18:10,593 - alembic.runtime.migration - INFO - Running upgrade ab513d89518b -> d0690a79ea51, add user_id on experiments
+2025-12-12 19:18:10,633 - alembic.runtime.migration - INFO - Running upgrade d0690a79ea51 -> 699f655af132, experiment_tags
+2025-12-12 19:18:10,639 - alembic.runtime.migration - INFO - Running upgrade 699f655af132 -> 58228d933c91, dataset_labels
+2025-12-12 19:18:10,645 - alembic.runtime.migration - INFO - Running upgrade 58228d933c91 -> e76cbd66ffc3, add experiments_dataset_examples junction table
+2025-12-12 19:18:10,656 - alembic.runtime.migration - INFO - Running upgrade e76cbd66ffc3 -> deb2c81c0bb2, dataset_splits
+2025-12-12 19:18:10,706 - phoenix.server.app - INFO - Server umap params: UMAPParameters(min_dist=0.0, n_neighbors=30, n_samples=500)
+2025-12-12 19:18:11,990 - app.core.observability_config - INFO - Phoenix session launched at: http://localhost:6006/
+2025-12-12 19:18:11,998 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.name' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 19:18:11,999 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'service.version' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 19:18:12,000 - opentelemetry.attributes - WARNING - Invalid type NoneType for attribute 'deployment.environment' value. Expected one of ['bool', 'str', 'bytes', 'int', 'float'] or a sequence of those types
+2025-12-12 19:18:12,004 - app.core.observability_config - INFO - [SUCCESS] Traceloop SDK initialized
+2025-12-12 19:18:12,005 - app.core.observability_config - INFO - [SUCCESS] Observability initialized successfully
+2025-12-12 19:18:12,008 - app.core.observability_config - INFO - [INFO] Phoenix UI available at: http://127.0.0.1:6006
+2025-12-12 19:18:27,344 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:18:27,384 - app.services.llm.token_service - WARNING - Model gemini-2.0-flash not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 19:18:27,998 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 32.016646102s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 32
+}
+].
+2025-12-12 19:18:30,072 - app.services.llm.llm_service - ERROR - Error calling LLM: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 29.942749247s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 29
+}
+]
+2025-12-12 19:22:20,984 - app.core.observability_config - INFO - Shutting down observability...
+2025-12-12 19:22:20,985 - app.core.observability_config - INFO - [SUCCESS] Observability shutdown complete
+2025-12-12 19:23:04,638 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:23:04,659 - app.services.llm.token_service - WARNING - Model gemini-2.0-flash not found in tiktoken. Falling back to cl100k_base.
+2025-12-12 19:23:05,019 - langchain_google_genai.chat_models - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 54.997414053s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 54
+}
+].
+2025-12-12 19:23:05,770 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:23:07,168 - app.services.llm.llm_service - ERROR - Error calling LLM: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 52.845633822s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2025-12-12 19:24:19,218 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:24:44,740 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:28:17,627 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:28:43,918 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:28:59,846 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:29:11,451 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:29:23,125 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:29:34,719 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:29:46,073 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:30:07,758 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:30:19,752 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:30:20,299 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:31:57,663 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:32:19,194 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt
+2025-12-12 19:35:26,049 - app.core.logging_config - INFO - Logging configured. Writing to logs\logs.txt

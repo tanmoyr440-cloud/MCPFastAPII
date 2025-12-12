@@ -1,6 +1,11 @@
 import asyncio
 import logging
 import os
+import sys
+
+# Add project root to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
 from app.services.llm.evaluation_service import evaluation_service
 from app.services.llm.llm_service import LLMService
 

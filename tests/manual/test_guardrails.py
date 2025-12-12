@@ -4,7 +4,10 @@ Tests both backend and frontend guardrails against all documented scenarios
 """
 
 import sys
-sys.path.insert(0, '/f/AIHackathon/ai-desk/backend')
+import os
+
+# Add project root to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 
 from app.services.guardrails_service import validate_all_guardrails
 

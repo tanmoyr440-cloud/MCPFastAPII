@@ -1,6 +1,12 @@
 import asyncio
 import logging
+import sys
+import os
 from unittest.mock import MagicMock, AsyncMock, patch
+
+# Add project root to path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
+
 from app.services.llm.llm_service import LLMService
 
 # Configure logging
