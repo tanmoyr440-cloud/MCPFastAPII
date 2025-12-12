@@ -69,13 +69,16 @@ class LLMService:
     def _get_llm(self, model_type: ModelType, temperature: float = 0.7, max_tokens: Optional[int] = None) -> ChatOpenAI:
         """Get LangChain ChatOpenAI instance."""
         deployment_name = self._get_deployment_name(model_type)
+        sync_client = httpx.Client(verify=False)
+        async_client = httpx.AsyncClient(verify=False)
         return ChatOpenAI(
             api_key=self.api_key,
             base_url=self.api_endpoint,
             model=deployment_name,
             temperature=temperature,
             max_tokens=max_tokens,
-            http_client=httpx.Client(verify=False)
+            http_client=sync_client,
+            http_async_client=async_client
         )
 
     async def get_response(
